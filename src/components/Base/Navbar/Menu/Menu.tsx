@@ -1,15 +1,29 @@
 import React from "react";
+import { StyledMenu } from "./StyledMenu";
+import Link from "next/link";
 
-const Menu = () => {
+interface menuTypes {
+  open: boolean;
+}
+
+const Menu = ({ open }: menuTypes) => {
   return (
-    <div className="bg-primary fixed left-0 right-0 top-0 overflow-x-hidden pt-24 pb-6 flex items-center p-0 m-0 justify-center w-full origin-[50%_50%_0] duration-[500ms]">
-      <ul className="text-white flex flex-col gap-8 p-0 m-0 items-center text-center md:w-full md:flex-row">
-        <li>Home</li>
-        <li>About</li>
-        <li>Works</li>
-        <li>Contact</li>
+    <StyledMenu className="bg-primary " open={open}>
+      <ul className="md:w-full">
+        <li>
+          <Link href="/">Home</Link>
+        </li>
+        <li>
+          <Link href="/about">About</Link>
+        </li>
+        <li>
+          <Link href="/works">Works</Link>
+        </li>
+        <li>
+          <Link href="/contact">Contact</Link>
+        </li>
       </ul>
-    </div>
+    </StyledMenu>
   );
 };
 

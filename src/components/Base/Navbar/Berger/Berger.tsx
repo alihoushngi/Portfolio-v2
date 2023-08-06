@@ -1,15 +1,23 @@
 import React, { useState } from "react";
-import { BergerWrapper, Bergerline } from "./StyledBerger";
+import { BergerWrapper } from "./StyledBerger";
+import Menu from "../Menu/Menu";
 
 const Berger = () => {
   const [open, setOpen] = useState<boolean>(false);
 
   return (
-    <BergerWrapper open={open}>
-      <Bergerline></Bergerline>
-      <Bergerline></Bergerline>
-      <Bergerline></Bergerline>
-    </BergerWrapper>
+    <>
+      <BergerWrapper
+        open={open}
+        onClick={() => setOpen(!open)}
+        className="flex flex-col justify-between w-[25px] h-[18px] text-[25px] leading-[2rem] z-10 cursor-pointer lg:hidden"
+      >
+        <div />
+        <div />
+        <div />
+      </BergerWrapper>
+      <Menu open={open} />
+    </>
   );
 };
 
