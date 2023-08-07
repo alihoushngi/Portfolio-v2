@@ -7,9 +7,9 @@ import Berger from "./Berger/Berger";
 const Navbar = () => {
   return (
     <header className="max-md:py-5">
-      <div className="max-sm:container max-sm:px-5">
-        <div className="flex justify-between md:p-6">
-          <Link href="/" className="z-10 inline-block">
+      <div className="max-sm:container px-5">
+        <div className="flex justify-between md:p-6 items-center">
+          <Link href="/" className="z-50 inline-block">
             <Image src={logo} alt="logo" width={100} className="sm:w-[150px]" />
           </Link>
           <Berger />

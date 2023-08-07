@@ -4,6 +4,27 @@ import React, { useState } from "react";
 import Menu from "../Menu/Menu";
 import { styled } from "styled-components";
 
+const Berger = () => {
+  const [open, setOpen] = useState<boolean>(false);
+
+  return (
+    <>
+      <BergerWrapper
+        open={open}
+        onClick={() => setOpen(!open)}
+        className="flex flex-col justify-between w-[25px] h-[18px] text-[25px] leading-[2rem] z-50 cursor-pointer lg:hidden"
+      >
+        <div />
+        <div />
+        <div />
+      </BergerWrapper>
+      <Menu open={open} />
+    </>
+  );
+};
+
+export default Berger;
+
 // style
 const BergerWrapper = styled.div<{ open: boolean }>`
   div {
@@ -31,24 +52,3 @@ const BergerWrapper = styled.div<{ open: boolean }>`
     }
   }
 `;
-
-const Berger = () => {
-  const [open, setOpen] = useState<boolean>(false);
-
-  return (
-    <>
-      <BergerWrapper
-        open={open}
-        onClick={() => setOpen(!open)}
-        className="flex flex-col justify-between w-[25px] h-[18px] text-[25px] leading-[2rem] z-10 cursor-pointer lg:hidden"
-      >
-        <div />
-        <div />
-        <div />
-      </BergerWrapper>
-      <Menu open={open} />
-    </>
-  );
-};
-
-export default Berger;
