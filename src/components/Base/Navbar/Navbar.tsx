@@ -10,7 +10,13 @@ const Navbar = () => {
       <div className="max-sm:container px-5">
         <div className="flex justify-between md:p-6 items-center">
           <Link href="/" className="z-50 inline-block">
-            <Image src={logo} alt="logo" width={100} className="sm:w-[150px]" />
+            <Image
+              priority
+              src={logo}
+              alt="logo"
+              width={100}
+              className="sm:w-[150px]"
+            />
           </Link>
           <Berger />
         </div>

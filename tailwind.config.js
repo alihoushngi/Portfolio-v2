@@ -17,16 +17,39 @@ module.exports = {
         "4xl": "30px",
       },
     },
+
     extend: {
       colors: {
         primary: "#0F0F0F",
         secondary: "#9f9f9f",
         glassMorphism: "rgba(255, 255, 255, 0.2)",
+        ColorRound: "rgba(255, 255, 255, 0.1)",
+        gradientFirst: "rgba(255, 255, 255, 0.3)",
+        gradientSecound: "rgba(255, 255, 255, 0.05)",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      },
+      screens: {
+        "max-2xl": { max: "1535px" },
+        // => @media (max-width: 1535px) { ... }
+
+        "max-xl": { max: "1279px" },
+        // => @media (max-width: 1279px) { ... }
+
+        "max-lg": { max: "1023px" },
+        // => @media (max-width: 1023px) { ... }
+
+        "max-l": { max: "920px" },
+        // => @media (max-width: 920px) { ... }
+
+        "max-md": { max: "767px" },
+        // => @media (max-width: 767px) { ... }
+
+        "max-sm": { max: "639px" },
+        // => @media (max-width: 639px) { ... }
       },
     },
   },

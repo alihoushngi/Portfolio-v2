@@ -4,23 +4,29 @@ import React from "react";
 import Avatar from "../../../../public/static/images/Avatar.jpg";
 import {
   DescribtionWrapperStyled,
-  FirstSecWrapperStyled,
+  InfoStyled,
   ImageStyled,
   ImageWrapperStyled,
+  DescribtionTitleStyled,
+  DescribtionNameStyled,
+  DescribtionStyled,
 } from "./InfoStyled";
+import InfoContainers from "@/components/Containers/InfoContainers/InfoContainers";
 
 const Info = () => {
   return (
-    <FirstSecWrapperStyled href="#">
-      <ImageWrapperStyled>
-        <ImageStyled src={Avatar} alt="avatar" />
-      </ImageWrapperStyled>
-      <DescribtionWrapperStyled>
-        <h4>Frontend Developer</h4>
-        <h1>Ali Houshangi</h1>
-        <p></p>
-      </DescribtionWrapperStyled>
-    </FirstSecWrapperStyled>
+    <InfoContainers>
+      <InfoStyled href="#">
+        <ImageWrapperStyled>
+          <ImageStyled priority src={Avatar} alt="avatar" />
+        </ImageWrapperStyled>
+        <DescribtionWrapperStyled>
+          <DescribtionTitleStyled>Frontend Developer</DescribtionTitleStyled>
+          <DescribtionNameStyled>Ali Houshangi</DescribtionNameStyled>
+          <DescribtionStyled>Im Web Designer based in Rasht</DescribtionStyled>
+        </DescribtionWrapperStyled>
+      </InfoStyled>
+    </InfoContainers>
   );
 };
 
