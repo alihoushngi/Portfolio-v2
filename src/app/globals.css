@@ -2,7 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Import Swiper styles */
+@import url("swiper/css");
+@import url("swiper/css/navigation");
+@import url("swiper/css/pagination");
+@import url("swiper/css/scrollbar");
+
 body {
   background-color: #0f0f0f;
   color: #9f9f9f;
+}
+
+.swiper-wrapper {
+  align-items: center;
 }

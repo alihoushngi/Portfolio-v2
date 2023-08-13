@@ -16,16 +16,15 @@ import InfoContainers from "@/components/Containers/InfoContainers/InfoContainer
 const Info = () => {
   return (
     <InfoContainers>
-      <InfoStyled href="#">
-        <ImageWrapperStyled>
-          <ImageStyled priority src={Avatar} alt="avatar" />
-        </ImageWrapperStyled>
-        <DescribtionWrapperStyled>
-          <DescribtionTitleStyled>Frontend Developer</DescribtionTitleStyled>
-          <DescribtionNameStyled>Ali Houshangi</DescribtionNameStyled>
-          <DescribtionStyled>Im Web Designer based in Rasht</DescribtionStyled>
-        </DescribtionWrapperStyled>
-      </InfoStyled>
+      <InfoStyled href="#"></InfoStyled>
+      <ImageWrapperStyled>
+        <ImageStyled priority src={Avatar} alt="avatar" />
+      </ImageWrapperStyled>
+      <DescribtionWrapperStyled>
+        <DescribtionTitleStyled>Frontend Developer</DescribtionTitleStyled>
+        <DescribtionNameStyled>Ali Houshangi</DescribtionNameStyled>
+        <DescribtionStyled>Im Web Designer based in Rasht</DescribtionStyled>
+      </DescribtionWrapperStyled>
     </InfoContainers>
   );
 };

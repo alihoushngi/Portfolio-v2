@@ -4,22 +4,14 @@ import { styled } from "styled-components";
 
 //style
 export const InfoStyled = styled(Link)`
-  box-sizing: border-box !important;
-  position: relative;
-  padding: 50px 46px;
-  display: flex;
-  align-items: flex-start;
-  gap: 30px;
-
-  @media (max-width: 1090px) {
-    padding: 40px 30px;
-  }
-  @media (max-width: 920px) {
-    margin-bottom: 24px;
-  }
-  @media (max-width: 585px) {
-    flex-direction: column;
-  }
+  left: 0;
+  top: 0;
+  border-radius: 30px;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+  z-index: 9;
 `;
 
 export const ImageWrapperStyled = styled.div`
@@ -100,4 +92,7 @@ export const DescribtionNameStyled = styled.h1`
 export const DescribtionStyled = styled.p`
   letter-spacing: 0.3px;
   margin: 0;
+  z-index: 2;
+  position: relative;
+  line-height: 1.6;
 `;
