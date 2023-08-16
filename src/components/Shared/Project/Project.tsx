@@ -12,7 +12,7 @@ import {
   ProjectWrapper,
 } from "./ProjectStyle";
 import ProjectContainer from "@/components/Containers/ProjectContainer/ProjectContainer";
-import Logo from "../../../../public/static/images/logo_white.png";
+import diba from "../../../../public/static/images/Diba.jpg";
 
 const Project = () => {
   return (
@@ -20,12 +20,12 @@ const Project = () => {
       <ProjectWrapper>
         <ProjectLink href="#" />
         <ProjectImageWrapperStyle>
-          <ProjectImage priority src={Logo} alt="avatar" />
+          <ProjectImage priority src={diba} alt="diba" />
         </ProjectImageWrapperStyle>
         <ProjectInfoWrapperStyle>
           <ProjectInfoSyle>
-            <ProjectInfoDescribeStyle>more Project me</ProjectInfoDescribeStyle>
-            <ProjectInfoTitleStyle>Who I am ?</ProjectInfoTitleStyle>
+            <ProjectInfoDescribeStyle>SHOWCASE</ProjectInfoDescribeStyle>
+            <ProjectInfoTitleStyle>Projects</ProjectInfoTitleStyle>
           </ProjectInfoSyle>
           <ProjectInfoButtonWrapperStyle>
             <ProjectInfoButtonStyle>{"-->"}</ProjectInfoButtonStyle>

@@ -20,7 +20,7 @@ const About = () => {
       <AboutWrapper>
         <AboutLink href="#" />
         <AboutImageWrapperStyle>
-          <AboutImage priority src={Logo} alt="avatar" />
+          <AboutImage priority src={Logo} alt="logo" />
         </AboutImageWrapperStyle>
         <AboutInfoWrapperStyle>
           <AboutInfoSyle>

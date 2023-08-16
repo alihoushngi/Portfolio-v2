@@ -3,10 +3,13 @@ import Link from "next/link";
 import { styled } from "styled-components";
 
 export const AboutWrapper = styled.div`
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
   position: relative;
   width: 100%;
   max-width: 100%;
-  height: fit-content;
+  height: 100%;
   overflow-x: hidden;
   /* filter: grayscale(100%);
   -webkit-filter: grayscale(100%); */
@@ -24,17 +27,15 @@ export const AboutLink = styled(Link)`
 `;
 
 export const AboutImageWrapperStyle = styled.div`
-  width: 100%;
-  height: 100%;
+  width: 80%;
   position: relative;
   overflow: hidden;
-  border-radius: 30px 0 30px 0;
   flex: none;
-  margin-bottom: 20px;
-  padding: 2rem;
+  padding: 1rem;
+  margin: auto 20px;
 
   @media (max-width: 1090px) {
-    width: 75%;
+    width: 60%;
     margin: auto;
   }
   @media (max-width: 920px) {
