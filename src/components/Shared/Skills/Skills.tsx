@@ -1,13 +1,12 @@
 import SkillsContainer from "@/components/Containers/SkillsContainer/SkillsContainer";
 import React from "react";
 import { SkillsWrapper } from "./SkillsStyled";
-import SwipperCustom from "../SwipperCustom/SwipperCustom";
 import { mySkills } from "@/data/mySkills";
 import Image from "next/image";
 
 //swiper
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Navigation, Pagination } from "swiper/modules";
+import { Autoplay } from "swiper/modules";
 
 const Skills = () => {
   return (
@@ -15,13 +14,13 @@ const Skills = () => {
       <SkillsWrapper>
         <Swiper
           className="w-full h-full max-md:max-h-[200px]"
-          modules={[Navigation, Pagination, Autoplay]}
-          slidesPerView={8}
+          modules={[Autoplay]}
           autoplay={{
-            delay: -10,
+            delay: 0,
             disableOnInteraction: false,
           }}
-          speed={900}
+          slidesPerView={8}
+          speed={1000}
           loop
           pagination={false}
         >
