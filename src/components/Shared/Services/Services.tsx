@@ -1,7 +1,7 @@
 import React from "react";
 import {
   ServicesImage,
-  ServicesImageWrapperStyle,
+  ServicesIconWrapperStyle,
   ServicesInfoButtonStyle,
   ServicesInfoButtonWrapperStyle,
   ServicesInfoDescribeStyle,
@@ -12,22 +12,28 @@ import {
   ServicesWrapper,
 } from "./ServicesStyle";
 import ServicesContainer from "@/components/Containers/ServicesContainer/ServicesContainer";
-import Logo from "../../../../public/static/images/logow2.png";
+import coding from "../../../../public/static/images/codingService.png";
+import photoshop from "../../../../public/static/images/photoshopService.png";
+import uiux from "../../../../public/static/images/uxuiServices.png";
+import wordpress from "../../../../public/static/images/wordpressServices.png";
 
 const Services = () => {
   return (
     <ServicesContainer>
       <ServicesWrapper>
         <ServicesLink href="#" />
-        <ServicesImageWrapperStyle>
-          <ServicesImage priority src={Logo} alt="logo" />
-        </ServicesImageWrapperStyle>
+        <ServicesIconWrapperStyle>
+          <ServicesImage priority src={coding} alt="coding" width={30} />
+          <ServicesImage priority src={photoshop} alt="photoshop" width={30} />
+          <ServicesImage priority src={uiux} alt="uiux" width={30} />
+          <ServicesImage priority src={wordpress} alt="wordpress" width={30} />
+        </ServicesIconWrapperStyle>
         <ServicesInfoWrapperStyle>
           <ServicesInfoSyle>
             <ServicesInfoDescribeStyle>
-              more Services me
+              Whats can I do ?
             </ServicesInfoDescribeStyle>
-            <ServicesInfoTitleStyle>Who I am ?</ServicesInfoTitleStyle>
+            <ServicesInfoTitleStyle>Services</ServicesInfoTitleStyle>
           </ServicesInfoSyle>
           <ServicesInfoButtonWrapperStyle>
             <ServicesInfoButtonStyle>{"-->"}</ServicesInfoButtonStyle>

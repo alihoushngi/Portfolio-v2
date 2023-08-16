@@ -26,36 +26,15 @@ export const ServicesLink = styled(Link)`
   z-index: 9;
 `;
 
-export const ServicesImageWrapperStyle = styled.div`
-  width: 80%;
+export const ServicesIconWrapperStyle = styled.div`
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
   position: relative;
   overflow: hidden;
-  flex: none;
-  padding: 1rem;
-  margin: auto 20px;
-
-  @media (max-width: 1090px) {
-    width: 60%;
-    margin: auto;
-  }
-  @media (max-width: 920px) {
-    width: 224px;
-  }
-  @media (max-width: 640px) {
-    margin-bottom: 20px;
-    width: 224px;
-  }
+  padding: 1.9rem;
 `;
-export const ServicesImage = styled(Image)`
-  display: block;
-  height: auto;
-  object-fit: cover;
-  width: 100%;
-  max-width: 100%;
-  border: none;
-  border-radius: 0;
-  box-shadow: none;
-`;
+export const ServicesImage = styled(Image)``;
 
 export const ServicesInfoWrapperStyle = styled.div`
   display: flex;
