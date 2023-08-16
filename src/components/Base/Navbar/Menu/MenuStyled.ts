@@ -37,10 +37,10 @@ export const StyledMenu = styled.div<{ open: boolean }>`
     align-items: center;
     text-align: center;
 
-    @media (min-width: 724px) {
+    @media (min-width: 768px) {
       flex-direction: row;
     }
-    @media (min-width: 724px) {
+    @media (min-width: 768px) {
       width: 100%;
     }
   }

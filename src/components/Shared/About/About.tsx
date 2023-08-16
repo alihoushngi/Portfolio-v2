@@ -1,15 +1,36 @@
 import React from "react";
-import { AboutWrapper } from "./AboutStyle";
+import {
+  AboutImage,
+  AboutImageWrapperStyle,
+  AboutInfoButtonStyle,
+  AboutInfoButtonWrapperStyle,
+  AboutInfoDescribeStyle,
+  AboutInfoSyle,
+  AboutInfoTitleStyle,
+  AboutInfoWrapperStyle,
+  AboutLink,
+  AboutWrapper,
+} from "./AboutStyle";
 import AboutContainer from "@/components/Containers/AboutContainer/AboutContainer";
+import Logo from "../../../../public/static/images/logo_white.png";
 
 const About = () => {
   return (
     <AboutContainer>
       <AboutWrapper>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo maxime
-        veritatis nisi iusto esse! Odio in vero dolorem odit debitis deserunt
-        quibusdam pariatur esse deleniti atque accusamus laudantium nihil, rerum
-        assumenda distinctio accusantium officiis quia dolore possimus a impedit
+        <AboutLink href="#" />
+        <AboutImageWrapperStyle>
+          <AboutImage priority src={Logo} alt="avatar" />
+        </AboutImageWrapperStyle>
+        <AboutInfoWrapperStyle>
+          <AboutInfoSyle>
+            <AboutInfoDescribeStyle>more about me</AboutInfoDescribeStyle>
+            <AboutInfoTitleStyle>Who I am ?</AboutInfoTitleStyle>
+          </AboutInfoSyle>
+          <AboutInfoButtonWrapperStyle>
+            <AboutInfoButtonStyle>{"-->"}</AboutInfoButtonStyle>
+          </AboutInfoButtonWrapperStyle>
+        </AboutInfoWrapperStyle>
       </AboutWrapper>
     </AboutContainer>
   );

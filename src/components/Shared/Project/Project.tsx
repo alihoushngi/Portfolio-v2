@@ -1,15 +1,36 @@
 import React from "react";
-import { ProjectWrapper } from "./ProjectStyle";
+import {
+  ProjectImage,
+  ProjectImageWrapperStyle,
+  ProjectInfoButtonStyle,
+  ProjectInfoButtonWrapperStyle,
+  ProjectInfoDescribeStyle,
+  ProjectInfoSyle,
+  ProjectInfoTitleStyle,
+  ProjectInfoWrapperStyle,
+  ProjectLink,
+  ProjectWrapper,
+} from "./ProjectStyle";
 import ProjectContainer from "@/components/Containers/ProjectContainer/ProjectContainer";
+import Logo from "../../../../public/static/images/logo_white.png";
 
 const Project = () => {
   return (
     <ProjectContainer>
       <ProjectWrapper>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo maxime
-        veritatis nisi iusto esse! Odio in vero dolorem odit debitis deserunt
-        quibusdam pariatur esse deleniti atque accusamus laudantium nihil, rerum
-        assumenda distinctio accusantium officiis quia dolore possimus a impedit
+        <ProjectLink href="#" />
+        <ProjectImageWrapperStyle>
+          <ProjectImage priority src={Logo} alt="avatar" />
+        </ProjectImageWrapperStyle>
+        <ProjectInfoWrapperStyle>
+          <ProjectInfoSyle>
+            <ProjectInfoDescribeStyle>more Project me</ProjectInfoDescribeStyle>
+            <ProjectInfoTitleStyle>Who I am ?</ProjectInfoTitleStyle>
+          </ProjectInfoSyle>
+          <ProjectInfoButtonWrapperStyle>
+            <ProjectInfoButtonStyle>{"-->"}</ProjectInfoButtonStyle>
+          </ProjectInfoButtonWrapperStyle>
+        </ProjectInfoWrapperStyle>
       </ProjectWrapper>
     </ProjectContainer>
   );

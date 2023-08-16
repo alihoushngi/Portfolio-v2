@@ -30,7 +30,7 @@ const Skills = () => {
                 <Image
                   src={skills.picture}
                   alt={skills.name}
-                  width={15}
+                  width={20}
                   height={3}
                   className="w-auto h-auto"
                   priority

@@ -12,7 +12,7 @@ export const BergerWrapper = styled.div<{ open: boolean }>`
   z-index: 50;
   cursor: pointer;
 
-  @media (min-width: 724px) {
+  @media (min-width: 768px) {
     display: none;
   }
 

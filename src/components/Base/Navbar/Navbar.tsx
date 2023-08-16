@@ -8,8 +8,8 @@ const Navbar = () => {
   return (
     <header className="max-md:py-5">
       <div className="max-sm:container px-5">
-        <div className="flex justify-between md:p-6 items-center">
-          <Link href="/" className="z-50 inline-block">
+        <div className="flex justify-end md:p-6 items-center">
+          {/* <Link href="/" className="z-50 inline-block">
             <Image
               priority
               src={logo}
@@ -17,7 +17,7 @@ const Navbar = () => {
               width={100}
               className="sm:w-[150px]"
             />
-          </Link>
+          </Link> */}
           <Berger />
         </div>
       </div>

@@ -1,3 +1,5 @@
+import Image from "next/image";
+import Link from "next/link";
 import { styled } from "styled-components";
 
 export const AboutWrapper = styled.div`
@@ -9,3 +11,69 @@ export const AboutWrapper = styled.div`
   /* filter: grayscale(100%);
   -webkit-filter: grayscale(100%); */
 `;
+
+export const AboutLink = styled(Link)`
+  left: 0;
+  top: 0;
+  border-radius: 30px;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+  z-index: 9;
+`;
+
+export const AboutImageWrapperStyle = styled.div`
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 30px 0 30px 0;
+  flex: none;
+  margin-bottom: 20px;
+  padding: 2rem;
+
+  @media (max-width: 1090px) {
+    width: 75%;
+    margin: auto;
+  }
+  @media (max-width: 920px) {
+    width: 224px;
+  }
+  @media (max-width: 640px) {
+    margin-bottom: 20px;
+    width: 224px;
+  }
+`;
+export const AboutImage = styled(Image)`
+  display: block;
+  height: auto;
+  object-fit: cover;
+  width: 100%;
+  max-width: 100%;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+`;
+
+export const AboutInfoWrapperStyle = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+`;
+export const AboutInfoSyle = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+`;
+export const AboutInfoDescribeStyle = styled.h4`
+  font-size: 12px;
+  font-weight: 300;
+`;
+export const AboutInfoTitleStyle = styled.h1`
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffffff;
+`;
+export const AboutInfoButtonWrapperStyle = styled.div``;
+export const AboutInfoButtonStyle = styled.button``;
