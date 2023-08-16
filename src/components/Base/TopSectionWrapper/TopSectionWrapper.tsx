@@ -11,7 +11,7 @@ const TopSectionWrapper = () => {
       <Info />
       <div className="md:w-1/2 max-l:flex-grow-0 max-l:flex-shrink-0 max-l:basis-auto max-l:w-full ">
         <div className="h-full max-l:flex-grow-0 max-l:flex-shrink-0 max-l:basis-auto w-full flex flex-col justify-between gap-3">
-          <div className="relative w-full flex flex-wrap content-start py-0 px-3  max-md:p-0 mb-0">
+          <div className="relative w-full flex flex-wrap content-start py-0 px-3 h-full  max-md:p-0 mb-0">
             <Skills />
           </div>
           <section className="relative w-full ">

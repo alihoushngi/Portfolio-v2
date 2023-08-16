@@ -12,7 +12,7 @@ import {
   AboutWrapper,
 } from "./AboutStyle";
 import AboutContainer from "@/components/Containers/AboutContainer/AboutContainer";
-import Logo from "../../../../public/static/images/logo_white.png";
+import Logo from "../../../../public/static/images/logow2.png";
 
 const About = () => {
   return (

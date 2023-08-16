@@ -12,7 +12,7 @@ import {
   ProjectWrapper,
 } from "./ProjectStyle";
 import ProjectContainer from "@/components/Containers/ProjectContainer/ProjectContainer";
-import diba from "../../../../public/static/images/Diba.jpg";
+import diba from "../../../../public/static/images/Chatroom2.png";
 
 const Project = () => {
   return (

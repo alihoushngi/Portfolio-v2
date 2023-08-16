@@ -2,18 +2,18 @@
 
 import React, { useState } from "react";
 import Menu from "../Menu/Menu";
-import { BergerWrapper } from "./BergerStyled";
+import { BurgerWrapper } from "./BurgerStyled";
 
 const Berger = () => {
   const [open, setOpen] = useState<boolean>(false);
 
   return (
     <>
-      <BergerWrapper open={open} onClick={() => setOpen(!open)}>
+      <BurgerWrapper open={open} onClick={() => setOpen(!open)}>
         <div />
         <div />
         <div />
-      </BergerWrapper>
+      </BurgerWrapper>
       <Menu open={open} />
     </>
   );

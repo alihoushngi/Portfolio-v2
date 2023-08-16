@@ -1,7 +1,7 @@
 import { styled } from "styled-components";
 
 // style
-export const BergerWrapper = styled.div<{ open: boolean }>`
+export const BurgerWrapper = styled.div<{ open: boolean }>`
   display: flex;
   flex-direction: column;
   justify-content: space-between;

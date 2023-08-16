@@ -4,7 +4,7 @@ export const SkillsWrapper = styled.div`
   position: relative;
   width: 100%;
   max-width: 100%;
-  height: fit-content;
+  height: 100%;
   overflow-x: hidden;
   /* filter: grayscale(100%);
   -webkit-filter: grayscale(100%); */
