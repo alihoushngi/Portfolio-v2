@@ -30,7 +30,7 @@ export const ImageWrapperStyled = styled.div`
     width: 224px;
     height: 224px;
   }
-  @media (max-width: 585px) {
+  @media (max-width: 640px) {
     margin: auto;
   }
 `;

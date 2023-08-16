@@ -30,8 +30,9 @@ const Skills = () => {
                 <Image
                   src={skills.picture}
                   alt={skills.name}
-                  width={20}
-                  height={5}
+                  width={15}
+                  height={3}
+                  className="w-auto h-auto"
                   priority
                 />
               </SwiperSlide>
