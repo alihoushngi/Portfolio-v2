@@ -2,6 +2,16 @@ import Image from "next/image";
 import Link from "next/link";
 import { styled } from "styled-components";
 
+export const AboutInfoButtonStyle = styled.button`
+  transition: all 400ms ease-in;
+  font-weight: thin;
+  font-size: 10px;
+  border: 1px solid;
+  border-radius: 10px;
+  padding: 5px;
+  color: gray;
+`;
+
 export const AboutWrapper = styled.div`
   display: flex;
   justify-content: space-between;
@@ -11,8 +21,14 @@ export const AboutWrapper = styled.div`
   max-width: 100%;
   height: 100%;
   overflow-x: hidden;
-  /* filter: grayscale(100%);
-  -webkit-filter: grayscale(100%); */
+
+  &:hover {
+    ${AboutInfoButtonStyle} {
+      color: white;
+      font-weight: 900;
+      font-size: 12px;
+    }
+  }
 `;
 
 export const AboutLink = styled(Link)`
@@ -77,4 +93,3 @@ export const AboutInfoTitleStyle = styled.h1`
   color: #ffffff;
 `;
 export const AboutInfoButtonWrapperStyle = styled.div``;
-export const AboutInfoButtonStyle = styled.button``;

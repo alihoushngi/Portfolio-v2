@@ -25,7 +25,7 @@ const About = () => {
         <AboutInfoWrapperStyle>
           <AboutInfoSyle>
             <AboutInfoDescribeStyle>MORE ABOUT ME</AboutInfoDescribeStyle>
-            <AboutInfoTitleStyle>Who I am ?</AboutInfoTitleStyle>
+            <AboutInfoTitleStyle>About</AboutInfoTitleStyle>
           </AboutInfoSyle>
           <AboutInfoButtonWrapperStyle>
             <AboutInfoButtonStyle>{"-->"}</AboutInfoButtonStyle>

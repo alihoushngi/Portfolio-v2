@@ -2,6 +2,15 @@ import Image from "next/image";
 import Link from "next/link";
 import { styled } from "styled-components";
 
+export const ServicesInfoButtonStyle = styled.button`
+  transition: all 400ms ease-in;
+  font-weight: thin;
+  font-size: 10px;
+  border: 1px solid;
+  border-radius: 10px;
+  padding: 5px;
+`;
+
 export const ServicesWrapper = styled.div`
   display: flex;
   justify-content: space-between;
@@ -11,6 +20,14 @@ export const ServicesWrapper = styled.div`
   max-width: 100%;
   height: 100%;
   overflow-x: hidden;
+
+  &:hover {
+    ${ServicesInfoButtonStyle} {
+      color: white;
+      font-weight: 900;
+      font-size: 12px;
+    }
+  }
 `;
 
 export const ServicesLink = styled(Link)`
@@ -54,4 +71,3 @@ export const ServicesInfoTitleStyle = styled.h1`
   color: #ffffff;
 `;
 export const ServicesInfoButtonWrapperStyle = styled.div``;
-export const ServicesInfoButtonStyle = styled.button``;

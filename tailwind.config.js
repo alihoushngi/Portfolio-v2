@@ -24,7 +24,7 @@ module.exports = {
         secondary: "#9f9f9f",
         glassMorphism: "rgba(255, 255, 255, 0.2)",
         ColorRound: "rgba(255, 255, 255, 0.1)",
-        gradientFirst: "rgba(255, 255, 255, 0.3)",
+        gradientFirst: "rgb(255 255 255 / 32%)",
         gradientSecound: "rgba(255, 255, 255, 0.05)",
       },
       backgroundImage: {

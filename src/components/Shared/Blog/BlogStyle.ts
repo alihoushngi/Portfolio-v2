@@ -2,6 +2,15 @@ import Image from "next/image";
 import Link from "next/link";
 import { styled } from "styled-components";
 
+export const BlogInfoButtonStyle = styled.button`
+  transition: all 400ms ease-in;
+  font-weight: thin;
+  font-size: 10px;
+  border: 1px solid;
+  border-radius: 10px;
+  padding: 5px;
+`;
+
 export const BlogWrapper = styled.div`
   display: flex;
   justify-content: space-between;
@@ -11,8 +20,14 @@ export const BlogWrapper = styled.div`
   max-width: 100%;
   height: 100%;
   overflow-x: hidden;
-  /* filter: grayscale(100%);
-  -webkit-filter: grayscale(100%); */
+
+  &:hover {
+    ${BlogInfoButtonStyle} {
+      color: white;
+      font-weight: 900;
+      font-size: 12px;
+    }
+  }
 `;
 
 export const BlogLink = styled(Link)`
@@ -77,4 +92,3 @@ export const BlogInfoTitleStyle = styled.h1`
   color: #ffffff;
 `;
 export const BlogInfoButtonWrapperStyle = styled.div``;
-export const BlogInfoButtonStyle = styled.button``;
