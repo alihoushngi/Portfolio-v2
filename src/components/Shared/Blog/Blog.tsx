@@ -24,7 +24,7 @@ const Blog = () => {
         </BlogImageWrapperStyle>
         <BlogInfoWrapperStyle>
           <BlogInfoSyle>
-            <BlogInfoDescribeStyle>My blogs</BlogInfoDescribeStyle>
+            <BlogInfoDescribeStyle>MY BLOGS EVRYONE NEED</BlogInfoDescribeStyle>
             <BlogInfoTitleStyle>Blog</BlogInfoTitleStyle>
           </BlogInfoSyle>
           <BlogInfoButtonWrapperStyle>

@@ -21,9 +21,11 @@ const Info = () => {
         <ImageStyled priority src={Avatar} alt="avatar" />
       </ImageWrapperStyled>
       <DescribtionWrapperStyled>
-        <DescribtionTitleStyled>Frontend Developer</DescribtionTitleStyled>
+        <DescribtionTitleStyled>FRONTEND DEVELOPER</DescribtionTitleStyled>
         <DescribtionNameStyled>Ali Houshangi</DescribtionNameStyled>
-        <DescribtionStyled>Im Web Designer based in Rasht</DescribtionStyled>
+        <DescribtionStyled>
+          I am a frontend web designer with a passion for Next.js technology
+        </DescribtionStyled>
       </DescribtionWrapperStyled>
     </InfoContainers>
   );

@@ -2,7 +2,7 @@
 import React from "react";
 import Blog from "@/components/Shared/Blog/Blog";
 import Services from "@/components/Shared/Services/Services";
-import Profile from "@/components/Shared/Profile/Profile";
+import Contact from "@/components/Shared/Contact/Contact";
 
 const BottomSectionWrapper = () => {
   return (
@@ -18,7 +18,7 @@ const BottomSectionWrapper = () => {
                 <Services />
               </div>
               <div className="w-1/4 max-l:w-full">
-                <Profile />
+                <Contact />
               </div>
             </div>
           </section>

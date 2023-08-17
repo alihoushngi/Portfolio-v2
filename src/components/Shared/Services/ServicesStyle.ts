@@ -11,8 +11,6 @@ export const ServicesWrapper = styled.div`
   max-width: 100%;
   height: 100%;
   overflow-x: hidden;
-  /* filter: grayscale(100%);
-  -webkit-filter: grayscale(100%); */
 `;
 
 export const ServicesLink = styled(Link)`

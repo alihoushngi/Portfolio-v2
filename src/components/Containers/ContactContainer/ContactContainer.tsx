@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-const ProfileContainer = ({ children }: { children: React.ReactNode }) => {
+const ContactContainer = ({ children }: { children: React.ReactNode }) => {
   useEffect(() => {
     AOS.init();
   }, []);
@@ -20,4 +20,4 @@ const ProfileContainer = ({ children }: { children: React.ReactNode }) => {
   );
 };
 
-export default ProfileContainer;
+export default ContactContainer;

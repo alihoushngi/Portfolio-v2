@@ -62,7 +62,7 @@ export const DescribtionWrapperStyled = styled.div`
 export const DescribtionTitleStyled = styled.h4`
   color: #bcbcbc;
   opacity: 0.7;
-  font-size: 14px;
+  font-size: 12px;
   letter-spacing: 0.3px;
   margin-bottom: 3px;
 `;
