@@ -18,7 +18,7 @@ const Blog = () => {
   return (
     <BlogContainer>
       <BlogWrapper>
-        <BlogLink href="#" />
+        <BlogLink href="/blog" />
         <BlogImageWrapperStyle>
           <BlogImage priority src={BlogIcon} alt="logo" width={80} />
         </BlogImageWrapperStyle>

@@ -18,7 +18,7 @@ const Project = () => {
   return (
     <ProjectContainer>
       <ProjectWrapper>
-        <ProjectLink href="#" />
+        <ProjectLink href="/project" />
         <ProjectImageWrapperStyle>
           <ProjectImage priority src={diba} alt="diba" />
         </ProjectImageWrapperStyle>

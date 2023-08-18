@@ -39,8 +39,8 @@ module.exports = {
         "max-xl": { max: "1279px" },
         // => @media (max-width: 1279px) { ... }
 
-        "max-lg": { max: "1023px" },
-        // => @media (max-width: 1023px) { ... }
+        "max-lg": { max: "1024px" },
+        // => @media (max-width: 1024px) { ... }
 
         "max-l": { max: "920px" },
         // => @media (max-width: 920px) { ... }

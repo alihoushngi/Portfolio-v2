@@ -8,6 +8,65 @@
 @import url("swiper/css/pagination");
 @import url("swiper/css/scrollbar");
 
+/* tailwind custom style */
+@layer components {
+  .cardStyle {
+    width: 100%;
+    height: 100%;
+    border-radius: 1.5rem;
+    border-width: 0.5px;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.1);
+    background-color: #0f0f0f;
+    position: relative;
+    padding: 20px 25px;
+    backdrop-filter: blur(4px);
+    box-sizing: border-box;
+  }
+  .cardStyle::before {
+    content: "";
+    border-radius: 1.5rem;
+    opacity: 0.25;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    box-sizing: border-box;
+
+    background-image: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.05),
+      rgb(255 255 255 / 32%)
+    );
+  }
+
+  .cardStyle::after {
+    content: "";
+    border-radius: 1.5rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -10;
+    margin: -1px;
+  }
+
+  @media (min-width: 1024px) {
+    .cardStyle {
+      margin: 0px;
+    }
+  }
+
+  @media (max-width: 920px) {
+    .cardStyle {
+      margin-bottom: 1.5rem;
+    }
+  }
+}
+
 body {
   background-color: #0f0f0f;
   color: #9f9f9f;

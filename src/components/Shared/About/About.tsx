@@ -18,7 +18,7 @@ const About = () => {
   return (
     <AboutContainer>
       <AboutWrapper>
-        <AboutLink href="#" />
+        <AboutLink href="/about" />
         <AboutImageWrapperStyle>
           <AboutImage priority src={Logo} alt="logo" />
         </AboutImageWrapperStyle>

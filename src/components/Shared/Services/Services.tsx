@@ -21,7 +21,7 @@ const Services = () => {
   return (
     <ServicesContainer>
       <ServicesWrapper>
-        <ServicesLink href="#" />
+        <ServicesLink href="/services" />
         <ServicesIconWrapperStyle>
           <ServicesImage priority src={coding} alt="coding" width={30} />
           <ServicesImage priority src={photoshop} alt="photoshop" width={30} />

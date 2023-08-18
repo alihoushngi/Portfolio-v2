@@ -3,6 +3,25 @@ import Link from "next/link";
 import { styled } from "styled-components";
 
 //style
+export const InfoWrapperStyle = styled.div`
+  padding: 50px 45px;
+  display: flex;
+  align-items: start;
+  gap: 30px;
+
+  @media (max-width: 1024px) {
+    padding: 40px 30px;
+  }
+
+  @media (max-width: 920px) {
+    margin-bottom: 1.5rem;
+  }
+
+  @media (max-width: 639px) {
+    flex-direction: column;
+  }
+`;
+
 export const InfoStyled = styled(Link)`
   left: 0;
   top: 0;
@@ -11,7 +30,7 @@ export const InfoStyled = styled(Link)`
   height: 100%;
   opacity: 0;
   position: absolute;
-  z-index: 9;
+  z-index: 100;
 `;
 
 export const ImageWrapperStyled = styled.div`

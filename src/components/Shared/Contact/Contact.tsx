@@ -15,30 +15,38 @@ import {
 import ContactContainer from "@/components/Containers/ContactContainer/ContactContainer";
 import Telegram from "../../../../public/static/images/telegramMessage.png";
 import Instagram from "../../../../public/static/images/instagramMessage.png";
+import Link from "next/link";
 
 const Contact = () => {
   return (
     <ContactContainer>
       <ContactWrapper>
-        <ContactLink href="#" />
+        <ContactLink href="/contact" />
         <ContactSocialWrapperStyle>
           <SocialImageWrapperStyle>
-            <ContactSochial
-              priority
-              src={Telegram}
-              alt="telegram"
-              width={25}
-              height={25}
-            />
+            <Link href="https://t.me/Alihoushangi" target="_blank">
+              <ContactSochial
+                priority
+                src={Telegram}
+                alt="telegram"
+                width={25}
+                height={25}
+              />
+            </Link>
           </SocialImageWrapperStyle>
           <SocialImageWrapperStyle>
-            <ContactSochial
-              priority
-              src={Instagram}
-              alt="instagram"
-              width={25}
-              height={25}
-            />
+            <Link
+              href="https://www.instagram.com/alihoushngii/"
+              target="_blank"
+            >
+              <ContactSochial
+                priority
+                src={Instagram}
+                alt="instagram"
+                width={25}
+                height={25}
+              />
+            </Link>
           </SocialImageWrapperStyle>
         </ContactSocialWrapperStyle>
         <ContactInfoWrapperStyle>
