@@ -19,7 +19,11 @@ import CardContainer from "@/components/Containers/CardContainer/CardContainer";
 
 const Services = () => {
   return (
-    <CardContainer containerStyle="max-h-full h-full flex items-stretch">
+    <CardContainer
+      containerStyle="max-h-full h-full flex items-stretch"
+      aosDuration="2000"
+      aosStyle="fade-up"
+    >
       <ServicesWrapper>
         <ServicesLink href="/services" />
         <ServicesIconWrapperStyle>

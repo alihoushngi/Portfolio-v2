@@ -16,7 +16,11 @@ import CardContainer from "@/components/Containers/CardContainer/CardContainer";
 
 const Blog = () => {
   return (
-    <CardContainer containerStyle="max-h-full h-full flex items-stretch">
+    <CardContainer
+      containerStyle="max-h-full h-full flex items-stretch"
+      aosDuration="1500"
+      aosStyle="fade-right"
+    >
       <BlogWrapper>
         <BlogLink href="/blog" />
         <BlogImageWrapperStyle>

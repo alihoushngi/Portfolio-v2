@@ -16,7 +16,11 @@ import CardContainer from "@/components/Containers/CardContainer/CardContainer";
 
 const Project = () => {
   return (
-    <CardContainer containerStyle="w-1/2 md:ms-2">
+    <CardContainer
+      containerStyle="w-1/2 md:ms-2"
+      aosDuration="3000"
+      aosStyle="fade-left"
+    >
       <ProjectWrapper>
         <ProjectLink href="/project" />
         <ProjectImageWrapperStyle>

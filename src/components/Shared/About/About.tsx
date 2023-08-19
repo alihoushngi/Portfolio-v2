@@ -16,7 +16,11 @@ import CardContainer from "@/components/Containers/CardContainer/CardContainer";
 
 const About = () => {
   return (
-    <CardContainer containerStyle="w-[49%] flex items-stretch">
+    <CardContainer
+      containerStyle="w-[49%] flex items-stretch"
+      aosDuration="2500"
+      aosStyle="fade-left"
+    >
       <AboutWrapper>
         <AboutLink href="/about" />
         <AboutImageWrapperStyle>

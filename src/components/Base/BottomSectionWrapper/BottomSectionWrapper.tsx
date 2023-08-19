@@ -6,25 +6,17 @@ import Contact from "@/components/Shared/Contact/Contact";
 
 const BottomSectionWrapper = () => {
   return (
-    <div className="flex mr-auto ml-auto relative max-w-[1170px] flex-wrap l:max-h-[325px] mt-3 mb-24">
-      <div className="md:w-full max-l:flex-grow-0 max-l:flex-shrink-0 max-l:basis-auto max-l:w-full ">
-        <div className="aos-init h-full max-l:flex-grow-0 max-l:flex-shrink-0 max-l:basis-auto w-full flex flex-col justify-between gap-3">
-          <section className="relative w-full ">
-            <div className="relative flex max-l:flex-wrap h-full content-start py-0 max-l:p-0 mb-0 gap-3">
-              <div className="w-1/4 max-l:w-full">
-                <Blog />
-              </div>
-              <div className="w-1/2 max-l:w-full">
-                <Services />
-              </div>
-              <div className="w-1/4 max-l:w-full">
-                <Contact />
-              </div>
-            </div>
-          </section>
-        </div>
+    <section className="relative w-full justify-between max-l:mb-16 max-l:flex-grow-0 max-l:flex-shrink-0 max-l:basis-auto flex max-l:flex-wrap h-full content-start py-0 max-l:p-0 mb-0 gap-3">
+      <div className="w-1/4 max-l:w-full">
+        <Blog />
       </div>
-    </div>
+      <div className="w-1/2 max-l:w-full">
+        <Services />
+      </div>
+      <div className="w-1/4 max-l:w-full">
+        <Contact />
+      </div>
+    </section>
   );
 };
 

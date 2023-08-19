@@ -16,7 +16,11 @@ import CardContainer from "@/components/Containers/CardContainer/CardContainer";
 
 const Info = () => {
   return (
-    <CardContainer containerStyle="max-l:w-full md:w-1/2">
+    <CardContainer
+      containerStyle="max-l:w-full md:w-1/2"
+      aosDuration="1500"
+      aosStyle="fade-right"
+    >
       <InfoWrapperStyle>
         <InfoStyled href="/info"></InfoStyled>
         <ImageWrapperStyled>

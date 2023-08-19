@@ -19,7 +19,11 @@ import CardContainer from "@/components/Containers/CardContainer/CardContainer";
 
 const Contact = () => {
   return (
-    <CardContainer containerStyle="max-h-full h-full flex items-stretch">
+    <CardContainer
+      containerStyle="max-h-full h-full flex items-stretch"
+      aosDuration="2500"
+      aosStyle="fade-left"
+    >
       <ContactWrapper>
         <ContactLink href="/contact" />
         <ContactSocialWrapperStyle>
