@@ -12,11 +12,11 @@ import {
   DescribtionStyled,
   InfoWrapperStyle,
 } from "./InfoStyled";
-import InfoContainers from "@/components/Containers/InfoContainers/InfoContainers";
+import CardContainer from "@/components/Containers/CardContainer/CardContainer";
 
 const Info = () => {
   return (
-    <InfoContainers>
+    <CardContainer containerStyle="max-l:w-full md:w-1/2">
       <InfoWrapperStyle>
         <InfoStyled href="/info"></InfoStyled>
         <ImageWrapperStyled>
@@ -30,7 +30,7 @@ const Info = () => {
           </DescribtionStyled>
         </DescribtionWrapperStyled>
       </InfoWrapperStyle>
-    </InfoContainers>
+    </CardContainer>
   );
 };
 

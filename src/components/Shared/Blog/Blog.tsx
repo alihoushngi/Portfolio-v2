@@ -11,12 +11,12 @@ import {
   BlogLink,
   BlogWrapper,
 } from "./BlogStyle";
-import BlogContainer from "@/components/Containers/BlogContainer/BlogContainer";
 import BlogIcon from "../../../../public/static/images/BlogIcon.png";
+import CardContainer from "@/components/Containers/CardContainer/CardContainer";
 
 const Blog = () => {
   return (
-    <BlogContainer>
+    <CardContainer containerStyle="max-h-full h-full flex items-stretch">
       <BlogWrapper>
         <BlogLink href="/blog" />
         <BlogImageWrapperStyle>
@@ -32,7 +32,7 @@ const Blog = () => {
           </BlogInfoButtonWrapperStyle>
         </BlogInfoWrapperStyle>
       </BlogWrapper>
-    </BlogContainer>
+    </CardContainer>
   );
 };
 

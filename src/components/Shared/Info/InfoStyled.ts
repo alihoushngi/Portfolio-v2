@@ -10,7 +10,7 @@ export const InfoWrapperStyle = styled.div`
   gap: 30px;
 
   @media (max-width: 1024px) {
-    padding: 40px 30px;
+    padding: 1rem;
   }
 
   @media (max-width: 920px) {
@@ -81,37 +81,66 @@ export const DescribtionWrapperStyled = styled.div`
 export const DescribtionTitleStyled = styled.h4`
   color: #bcbcbc;
   opacity: 0.7;
-  font-size: 12px;
+  font-size: 10px;
   letter-spacing: 0.3px;
   margin-bottom: 3px;
+
+  @media (max-width: 1090px) {
+    font-size: 10px;
+    line-height: 1.2;
+  }
+
+  @media (max-width: 920px) {
+    font-size: 15px;
+    line-height: 1.2;
+  }
+
+  @media (max-width: 425px) {
+    font-size: 10px;
+  }
 `;
 
 export const DescribtionNameStyled = styled.h1`
-  font-size: 36px;
+  font-size: 25px;
   line-height: 40px;
   color: #fff;
   font-weight: 500;
   margin-bottom: 12px;
 
   @media (max-width: 1090px) {
-    font-size: 30px;
+    font-size: 25px;
     line-height: 1.2;
   }
 
   @media (max-width: 920px) {
-    font-size: 36px;
+    font-size: 35px;
     line-height: 1.2;
   }
 
   @media (max-width: 425px) {
-    font-size: 30px;
+    font-size: 15px;
   }
 `;
 
 export const DescribtionStyled = styled.p`
+  font-size: 15px;
   letter-spacing: 0.3px;
   margin: 0;
   z-index: 2;
   position: relative;
   line-height: 1.6;
+
+  @media (max-width: 1090px) {
+    font-size: 10px;
+    line-height: 1.2;
+  }
+
+  @media (max-width: 920px) {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  @media (max-width: 425px) {
+    font-size: 10px;
+  }
 `;

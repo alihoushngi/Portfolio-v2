@@ -1,4 +1,3 @@
-import SkillsContainer from "@/components/Containers/SkillsContainer/SkillsContainer";
 import React from "react";
 import { SkillsWrapper } from "./SkillsStyled";
 import { mySkills } from "@/data/mySkills";
@@ -7,10 +6,11 @@ import Image from "next/image";
 //swiper
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
+import CardContainer from "@/components/Containers/CardContainer/CardContainer";
 
 const Skills = () => {
   return (
-    <SkillsContainer>
+    <CardContainer containerStyle="w-full h-full" cardCustomStyle="h-fit">
       <SkillsWrapper>
         <Swiper
           className="w-full h-full max-md:max-h-[200px]"
@@ -40,7 +40,7 @@ const Skills = () => {
           })}
         </Swiper>
       </SkillsWrapper>
-    </SkillsContainer>
+    </CardContainer>
   );
 };
 

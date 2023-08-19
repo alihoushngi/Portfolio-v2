@@ -12,14 +12,14 @@ import {
   ContactWrapper,
   SocialImageWrapperStyle,
 } from "./ContactStyle";
-import ContactContainer from "@/components/Containers/ContactContainer/ContactContainer";
 import Telegram from "../../../../public/static/images/telegramMessage.png";
 import Instagram from "../../../../public/static/images/instagramMessage.png";
 import Link from "next/link";
+import CardContainer from "@/components/Containers/CardContainer/CardContainer";
 
 const Contact = () => {
   return (
-    <ContactContainer>
+    <CardContainer containerStyle="max-h-full h-full flex items-stretch">
       <ContactWrapper>
         <ContactLink href="/contact" />
         <ContactSocialWrapperStyle>
@@ -59,7 +59,7 @@ const Contact = () => {
           </ContactInfoButtonWrapperStyle>
         </ContactInfoWrapperStyle>
       </ContactWrapper>
-    </ContactContainer>
+    </CardContainer>
   );
 };
 

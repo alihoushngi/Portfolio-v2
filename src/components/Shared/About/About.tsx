@@ -11,12 +11,12 @@ import {
   AboutLink,
   AboutWrapper,
 } from "./AboutStyle";
-import AboutContainer from "@/components/Containers/AboutContainer/AboutContainer";
 import Logo from "../../../../public/static/images/logow2.png";
+import CardContainer from "@/components/Containers/CardContainer/CardContainer";
 
 const About = () => {
   return (
-    <AboutContainer>
+    <CardContainer containerStyle="w-[49%] flex items-stretch">
       <AboutWrapper>
         <AboutLink href="/about" />
         <AboutImageWrapperStyle>
@@ -32,7 +32,7 @@ const About = () => {
           </AboutInfoButtonWrapperStyle>
         </AboutInfoWrapperStyle>
       </AboutWrapper>
-    </AboutContainer>
+    </CardContainer>
   );
 };
 

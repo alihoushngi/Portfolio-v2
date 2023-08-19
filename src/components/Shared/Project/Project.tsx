@@ -11,12 +11,12 @@ import {
   ProjectLink,
   ProjectWrapper,
 } from "./ProjectStyle";
-import ProjectContainer from "@/components/Containers/ProjectContainer/ProjectContainer";
 import diba from "../../../../public/static/images/Chatroom2.png";
+import CardContainer from "@/components/Containers/CardContainer/CardContainer";
 
 const Project = () => {
   return (
-    <ProjectContainer>
+    <CardContainer containerStyle="w-1/2 md:ms-2">
       <ProjectWrapper>
         <ProjectLink href="/project" />
         <ProjectImageWrapperStyle>
@@ -32,7 +32,7 @@ const Project = () => {
           </ProjectInfoButtonWrapperStyle>
         </ProjectInfoWrapperStyle>
       </ProjectWrapper>
-    </ProjectContainer>
+    </CardContainer>
   );
 };
 
