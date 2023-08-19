@@ -1,9 +1,10 @@
 "use client";
 import React from "react";
-import Info from "@/components/Shared/Info/Info";
-import Skills from "@/components/Shared/Skills/Skills";
-import About from "@/components/Shared/About/About";
-import Project from "@/components/Shared/Project/Project";
+
+import About from "@/components/Shared/MainPage/About/About";
+import Project from "@/components/Shared/MainPage/Project/Project";
+import Info from "@/components/Shared/MainPage/Info/Info";
+import Skills from "@/components/Shared/MainPage/Skills/Skills";
 
 const TopSectionWrapper = () => {
   return (

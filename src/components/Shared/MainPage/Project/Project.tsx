@@ -11,7 +11,7 @@ import {
   ProjectLink,
   ProjectWrapper,
 } from "./ProjectStyle";
-import diba from "../../../../public/static/images/Chatroom2.png";
+import diba from "../../../../../public/static/images/Chatroom2.png";
 import CardContainer from "@/components/Containers/CardContainer/CardContainer";
 
 const Project = () => {

@@ -11,7 +11,7 @@ import {
   AboutLink,
   AboutWrapper,
 } from "./AboutStyle";
-import Logo from "../../../../public/static/images/logow2.png";
+import Logo from "../../../../../public/static/images/logow2.png";
 import CardContainer from "@/components/Containers/CardContainer/CardContainer";
 
 const About = () => {

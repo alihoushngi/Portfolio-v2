@@ -12,8 +12,8 @@ import {
   ContactWrapper,
   SocialImageWrapperStyle,
 } from "./ContactStyle";
-import Telegram from "../../../../public/static/images/telegramMessage.png";
-import Instagram from "../../../../public/static/images/instagramMessage.png";
+import Telegram from "../../../../../public/static/images/telegramMessage.png";
+import Instagram from "../../../../../public/static/images/instagramMessage.png";
 import Link from "next/link";
 import CardContainer from "@/components/Containers/CardContainer/CardContainer";
 

@@ -11,7 +11,7 @@ import {
   BlogLink,
   BlogWrapper,
 } from "./BlogStyle";
-import BlogIcon from "../../../../public/static/images/BlogIcon.png";
+import BlogIcon from "../../../../../public/static/images/BlogIcon.png";
 import CardContainer from "@/components/Containers/CardContainer/CardContainer";
 
 const Blog = () => {

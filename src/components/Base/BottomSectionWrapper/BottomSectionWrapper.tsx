@@ -1,8 +1,8 @@
 "use client";
+import Blog from "@/components/Shared/MainPage/Blog/Blog";
+import Contact from "@/components/Shared/MainPage/Contact/Contact";
+import Services from "@/components/Shared/MainPage/Services/Services";
 import React from "react";
-import Blog from "@/components/Shared/Blog/Blog";
-import Services from "@/components/Shared/Services/Services";
-import Contact from "@/components/Shared/Contact/Contact";
 
 const BottomSectionWrapper = () => {
   return (
