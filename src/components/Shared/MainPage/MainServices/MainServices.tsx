@@ -10,14 +10,14 @@ import {
   ServicesInfoWrapperStyle,
   ServicesLink,
   ServicesWrapper,
-} from "./ServicesStyle";
+} from "./MainServicesStyle";
 import coding from "../../../../../public/static/images/codingService.png";
 import photoshop from "../../../../../public/static/images/photoshopService.png";
 import uiux from "../../../../../public/static/images/uxuiServices.png";
 import wordpress from "../../../../../public/static/images/wordpressServices.png";
 import CardContainer from "@/components/Containers/CardContainer/CardContainer";
 
-const Services = () => {
+const MainServices = () => {
   return (
     <CardContainer
       containerStyle="max-h-full h-full flex items-stretch"
@@ -48,4 +48,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default MainServices;

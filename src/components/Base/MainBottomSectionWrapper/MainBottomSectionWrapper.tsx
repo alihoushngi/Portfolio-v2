@@ -1,23 +1,23 @@
 "use client";
-import Blog from "@/components/Shared/MainPage/Blog/Blog";
-import Contact from "@/components/Shared/MainPage/Contact/Contact";
-import Services from "@/components/Shared/MainPage/Services/Services";
+import MainBlog from "@/components/Shared/MainPage/MainBlog/MainBlog";
+import MainContact from "@/components/Shared/MainPage/MainContact/MainContact";
+import MainServices from "@/components/Shared/MainPage/MainServices/MainServices";
 import React from "react";
 
-const BottomSectionWrapper = () => {
+const MainBottomSectionWrapper = () => {
   return (
     <section className="relative w-full justify-between max-l:mb-16 max-l:flex-grow-0 max-l:flex-shrink-0 max-l:basis-auto flex max-l:flex-wrap h-full content-start py-0 max-l:p-0 mb-0 gap-3">
       <div className="w-1/4 max-l:w-full">
-        <Blog />
+        <MainBlog />
       </div>
       <div className="w-1/2 max-l:w-full">
-        <Services />
+        <MainServices />
       </div>
       <div className="w-1/4 max-l:w-full">
-        <Contact />
+        <MainContact />
       </div>
     </section>
   );
 };
 
-export default BottomSectionWrapper;
+export default MainBottomSectionWrapper;

@@ -10,11 +10,11 @@ import {
   AboutInfoWrapperStyle,
   AboutLink,
   AboutWrapper,
-} from "./AboutStyle";
+} from "./MainAboutStyle";
 import Logo from "../../../../../public/static/images/logow2.png";
 import CardContainer from "@/components/Containers/CardContainer/CardContainer";
 
-const About = () => {
+const MainAbout = () => {
   return (
     <CardContainer
       containerStyle="w-[49%] flex items-stretch"
@@ -40,4 +40,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default MainAbout;

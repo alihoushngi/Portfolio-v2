@@ -10,11 +10,11 @@ import {
   BlogInfoWrapperStyle,
   BlogLink,
   BlogWrapper,
-} from "./BlogStyle";
+} from "./MainBlogStyle";
 import BlogIcon from "../../../../../public/static/images/BlogIcon.png";
 import CardContainer from "@/components/Containers/CardContainer/CardContainer";
 
-const Blog = () => {
+const MainBlog = () => {
   return (
     <CardContainer
       containerStyle="max-h-full h-full flex items-stretch"
@@ -40,4 +40,4 @@ const Blog = () => {
   );
 };
 
-export default Blog;
+export default MainBlog;

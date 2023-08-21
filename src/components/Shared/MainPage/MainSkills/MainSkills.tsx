@@ -1,5 +1,5 @@
 import React from "react";
-import { SkillsWrapper } from "./SkillsStyled";
+import { SkillsWrapper } from "./MainSkillsStyled";
 import { mySkills } from "@/data/mySkills";
 import Image from "next/image";
 
@@ -8,7 +8,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import CardContainer from "@/components/Containers/CardContainer/CardContainer";
 
-const Skills = () => {
+const MainSkills = () => {
   return (
     <CardContainer
       containerStyle="w-full h-full"
@@ -49,4 +49,4 @@ const Skills = () => {
   );
 };
 
-export default Skills;
+export default MainSkills;

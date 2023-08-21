@@ -11,10 +11,10 @@ import {
   DescribtionNameStyled,
   DescribtionStyled,
   InfoWrapperStyle,
-} from "./InfoStyled";
+} from "./MainInfoStyled";
 import CardContainer from "@/components/Containers/CardContainer/CardContainer";
 
-const Info = () => {
+const MainInfo = () => {
   return (
     <CardContainer
       containerStyle="max-l:w-full md:w-1/2"
@@ -38,4 +38,4 @@ const Info = () => {
   );
 };
 
-export default Info;
+export default MainInfo;

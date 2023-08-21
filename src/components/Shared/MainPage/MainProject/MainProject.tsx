@@ -10,11 +10,11 @@ import {
   ProjectInfoWrapperStyle,
   ProjectLink,
   ProjectWrapper,
-} from "./ProjectStyle";
+} from "./MainProjectStyle";
 import diba from "../../../../../public/static/images/Chatroom2.png";
 import CardContainer from "@/components/Containers/CardContainer/CardContainer";
 
-const Project = () => {
+const MainProject = () => {
   return (
     <CardContainer
       containerStyle="w-1/2 md:ms-2"
@@ -40,4 +40,4 @@ const Project = () => {
   );
 };
 
-export default Project;
+export default MainProject;
