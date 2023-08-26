@@ -28,7 +28,6 @@ export const StyledMenu = styled.div<{ open: boolean }>`
   }
 
   ul {
-    color: #fff;
     display: flex;
     flex-direction: column;
     gap: 2rem;

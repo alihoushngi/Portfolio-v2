@@ -10,12 +10,7 @@ import CardContainer from "@/components/Containers/CardContainer/CardContainer";
 
 const MainSkills = () => {
   return (
-    <CardContainer
-      containerStyle="w-full h-full"
-      cardCustomStyle="h-fit"
-      aosDuration="2000"
-      aosStyle="fade-down"
-    >
+    <CardContainer containerStyle="w-full h-full" cardCustomStyle="h-fit">
       <SkillsWrapper>
         <Swiper
           className="w-full h-full max-md:max-h-[200px]"

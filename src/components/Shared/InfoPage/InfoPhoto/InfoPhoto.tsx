@@ -1,14 +1,19 @@
+"use client";
+
 import CardContainer from "@/components/Containers/CardContainer/CardContainer";
+import Avatar from "../../../../../public/static/images/Avatar.jpg";
 import React from "react";
+import { ImageStyled, ImageWrapperStyled } from "./InfoPhotoStyle";
 
 const InfoPhoto = () => {
   return (
     <CardContainer
-      containerStyle="max-l:w-full md:w-1/2"
-      aosDuration="1500"
-      aosStyle="fade-right"
+      containerStyle="max-l:w-full justify-center md:w-[29%]"
+      cardCustomStyle="md:w-fit max-md:w-full"
     >
-      photo
+      <ImageWrapperStyled>
+        <ImageStyled priority src={Avatar} alt="avatar" />
+      </ImageWrapperStyled>
     </CardContainer>
   );
 };

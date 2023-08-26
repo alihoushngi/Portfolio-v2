@@ -1,6 +1,5 @@
 import React from "react";
 import {
-  ContactSochial,
   ContactSocialWrapperStyle,
   ContactInfoButtonStyle,
   ContactInfoButtonWrapperStyle,
@@ -10,48 +9,43 @@ import {
   ContactInfoWrapperStyle,
   ContactLink,
   ContactWrapper,
-  SocialImageWrapperStyle,
 } from "./MainContactStyle";
-import Telegram from "../../../../../public/static/images/telegramMessage.png";
-import Instagram from "../../../../../public/static/images/instagramMessage.png";
-import Link from "next/link";
 import CardContainer from "@/components/Containers/CardContainer/CardContainer";
+import ContactIcons from "../../ContactIcons/ContactIcons";
+import Linkedin from "../../../../../public/static/images/linkedinMessage.png";
+import Gmail from "../../../../../public/static/images/gmailMessage.png";
+
+const ContactList = [
+  {
+    name: "Gmail",
+    Link: "mailto:alihoushngi@gmail.com",
+    Icon: Gmail,
+  },
+  {
+    name: "Linkedin",
+    Link: "https://www.linkedin.com/in/alihoushangi/",
+    Icon: Linkedin,
+  },
+];
 
 const MainContact = () => {
   return (
-    <CardContainer
-      containerStyle="max-h-full h-full flex items-stretch"
-      aosDuration="2500"
-      aosStyle="fade-left"
-    >
+    <CardContainer containerStyle="max-h-full h-full flex items-stretch">
       <ContactWrapper>
         <ContactLink href="/contact" />
         <ContactSocialWrapperStyle>
-          <SocialImageWrapperStyle>
-            <Link href="https://t.me/Alihoushangi" target="_blank">
-              <ContactSochial
-                priority
-                src={Telegram}
-                alt="telegram"
-                width={25}
-                height={25}
+          {ContactList.map((item, index) => {
+            return (
+              <ContactIcons
+                key={index}
+                SocialLink={item.Link}
+                SocialIconSrc={item.Icon}
+                SocialIconAlt={item.name}
+                SocialIconWidth={25}
+                SocialIconheight={25}
               />
-            </Link>
-          </SocialImageWrapperStyle>
-          <SocialImageWrapperStyle>
-            <Link
-              href="https://www.instagram.com/alihoushngii/"
-              target="_blank"
-            >
-              <ContactSochial
-                priority
-                src={Instagram}
-                alt="instagram"
-                width={25}
-                height={25}
-              />
-            </Link>
-          </SocialImageWrapperStyle>
+            );
+          })}
         </ContactSocialWrapperStyle>
         <ContactInfoWrapperStyle>
           <ContactInfoSyle>

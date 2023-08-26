@@ -7,14 +7,10 @@ const CardContainer = ({
   children,
   containerStyle,
   cardCustomStyle,
-  aosDuration,
-  aosStyle,
 }: {
   children: React.ReactNode;
   containerStyle?: string;
   cardCustomStyle?: string;
-  aosDuration: string;
-  aosStyle: string;
 }) => {
   useEffect(() => {
     AOS.init();
@@ -22,8 +18,8 @@ const CardContainer = ({
 
   return (
     <div
-      data-aos={aosStyle}
-      data-aos-duration={aosDuration}
+      data-aos="fade-up"
+      data-aos-duration="1500"
       className={`${containerStyle} aos-init sectionContainers`}
     >
       <div className={`${cardCustomStyle} cardStyle`}>{children}</div>

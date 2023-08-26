@@ -16,13 +16,8 @@ import CardContainer from "@/components/Containers/CardContainer/CardContainer";
 
 const MainInfo = () => {
   return (
-    <CardContainer
-      containerStyle="max-l:w-full md:w-1/2"
-      aosDuration="1500"
-      aosStyle="fade-right"
-    >
+    <CardContainer containerStyle="max-l:w-full md:w-1/2">
       <InfoWrapperStyle>
-        <InfoStyled href="/info"></InfoStyled>
         <ImageWrapperStyled>
           <ImageStyled priority src={Avatar} alt="avatar" />
         </ImageWrapperStyled>

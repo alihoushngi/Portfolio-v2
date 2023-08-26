@@ -123,7 +123,7 @@ export const DescribtionNameStyled = styled.h1`
 `;
 
 export const DescribtionStyled = styled.p`
-  font-size: 15px;
+  font-size: 10px;
   letter-spacing: 0.3px;
   margin: 0;
   z-index: 2;
