@@ -9,6 +9,18 @@ export const BlogInfoButtonStyle = styled.button`
   border: 1px solid;
   border-radius: 10px;
   padding: 5px;
+  z-index: 8;
+`;
+
+export const BlogImage = styled(Image)`
+  transition: all 400ms ease-in;
+  display: block;
+  height: auto;
+  object-fit: cover;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  filter: grayscale(1);
 `;
 
 export const BlogWrapper = styled.div`
@@ -20,12 +32,16 @@ export const BlogWrapper = styled.div`
   max-width: 100%;
   height: 100%;
   overflow-x: hidden;
+  z-index: 10;
 
   &:hover {
     ${BlogInfoButtonStyle} {
       color: white;
       font-weight: 900;
       font-size: 12px;
+    }
+    ${BlogImage} {
+      filter: grayscale(0);
     }
   }
 `;
@@ -42,34 +58,11 @@ export const BlogLink = styled(Link)`
 `;
 
 export const BlogImageWrapperStyle = styled.div`
-  /* width: 80%; */
   position: relative;
   overflow: hidden;
   flex: none;
   padding: 1rem;
   margin: auto;
-
-  /* @media (max-width: 1090px) {
-    width: 60%;
-    margin: auto;
-  }
-  @media (max-width: 920px) {
-    width: 224px;
-  }
-  @media (max-width: 640px) {
-    margin-bottom: 20px;
-    width: 224px;
-  } */
-`;
-export const BlogImage = styled(Image)`
-  display: block;
-  height: auto;
-  object-fit: cover;
-  /* width: 100%; */
-  /* max-width: 100%; */
-  border: none;
-  border-radius: 0;
-  box-shadow: none;
 `;
 
 export const BlogInfoWrapperStyle = styled.div`
