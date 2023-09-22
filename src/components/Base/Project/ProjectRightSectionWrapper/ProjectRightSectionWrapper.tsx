@@ -33,8 +33,8 @@ const ProjectListRight = [
 
 const ProjectRightSectionWrapper = () => {
   return (
-    <div className="w-2/3 flex min-h-[1px] relative">
-      <div className="relative flex  flex-wrap content-start">
+    <div className="w-2/3 flex min-h-[1px] relative max-sm:w-full ">
+      <div className="relative flex flex-wrap content-start">
         <div className="relative w-full flex flex-wrap content-start py-0 h-fit max-md:p-0 mb-3">
           <h2
             className="text-white text-6xl font-bold uppercase tracking-tighter items-center max-2l:text-4xl text-center w-full aos-init"
@@ -44,10 +44,14 @@ const ProjectRightSectionWrapper = () => {
             ALL PROJECT
           </h2>
         </div>
-        <div className="flex gap-3">
+        <div className="flex gap-3 max-sm:flex-col max-sm:w-full">
           {ProjectListLeft.map((item, index) => {
             return (
-              <CardContainer key={index} containerStyle="mb-4">
+              <CardContainer
+                key={index}
+                containerStyle="mb-4"
+                cardCustomStyle="flex justify-center"
+              >
                 <ProjectCard
                   ProjectWidth={300}
                   ProjectLinkHref={item.ProjectLink}
@@ -62,14 +66,18 @@ const ProjectRightSectionWrapper = () => {
         </div>
         {ProjectListRight.map((item, index) => {
           return (
-            <CardContainer key={index} containerStyle="mb-4">
+            <CardContainer
+              key={index}
+              containerStyle="mb-4"
+              cardCustomStyle="flex justify-center"
+            >
               <ProjectCard
                 ProjectLinkHref={item.ProjectLink}
                 ProjectImageSrc={item.ProjectImage}
                 ProjectImageAlt={item.ProjectName}
                 ProjectTagline={item.ProjectTagLine}
                 ProjectTitle={item.ProjectName}
-                ProjectWidth={100}
+                ProjectWidth={300}
               />
             </CardContainer>
           );

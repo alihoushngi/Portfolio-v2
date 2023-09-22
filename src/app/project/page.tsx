@@ -8,7 +8,7 @@ const page = () => {
   return (
     <>
       <Navbar />
-      <Layout customClass="flex-row">
+      <Layout customClass="flex-row max-sm:flex-col-reverse">
         <ProjectLeftSectionWrapper />
         <ProjectRightSectionWrapper />
       </Layout>

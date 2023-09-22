@@ -5,7 +5,7 @@ import { styled } from "styled-components";
 export const ProjectWrapperStyle = styled(Link)``;
 
 export const ProjectImageStyle = styled(Image)`
-  border-radius: 1.5rem;
+  border-radius: 0.5rem;
   margin-bottom: 13px;
 `;
 

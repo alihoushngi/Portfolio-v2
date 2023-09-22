@@ -23,11 +23,15 @@ const ProjectList = [
 
 const ProjectLeftSectionWrapper = () => {
   return (
-    <div className="w-1/3 flex min-h-[1px] relative">
-      <div className="relative flex-wrap content-start">
+    <div className="w-1/3 flex min-h-[1px] relative max-sm:w-full">
+      <div className="relative flex-wrap content-start max-sm:w-full">
         {ProjectList.map((item, index) => {
           return (
-            <CardContainer key={index} containerStyle="mb-4">
+            <CardContainer
+              key={index}
+              containerStyle="mb-4"
+              cardCustomStyle="flex justify-center"
+            >
               <ProjectCard
                 ProjectWidth={300}
                 ProjectLinkHref={item.ProjectLink}
