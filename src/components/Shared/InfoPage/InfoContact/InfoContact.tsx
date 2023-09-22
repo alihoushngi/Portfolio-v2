@@ -39,7 +39,7 @@ const ContactList = [
 const InfoContact = () => {
   return (
     <CardContainer
-      containerStyle="max-l:w-full h-[36%]"
+      containerStyle="max-l:w-full h-[36%] max-md:mb-20"
       cardCustomStyle="w-full min-h-auto flex gap-5 p-2 m-0 justify-center items-center"
     >
       {ContactList.map((item, index) => {

@@ -19,6 +19,11 @@ export const SocialImageWrapperStyle = styled.div`
   z-index: 1000;
   transition: all 100ms ease-in;
 
+  @media (max-width: 767px) {
+    width: 50px;
+    height: 50px;
+  }
+
   @media (min-width: 428px) {
     opacity: 0.5;
 

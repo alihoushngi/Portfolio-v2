@@ -26,7 +26,7 @@ const Menu = ({ open }: menuTypes) => {
           <Link href="/about">About</Link>
         </li>
         <li data-aos="zoom-in" data-aos-duration="2000" className="aos-init">
-          <Link href="/works">Works</Link>
+          <Link href="/project">Project</Link>
         </li>
         <li data-aos="zoom-in" data-aos-duration="2500" className="aos-init">
           <Link href="/contact">Contact</Link>
