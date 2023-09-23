@@ -87,3 +87,11 @@ body {
 .swiper-wrapper {
   align-items: center;
 }
+
+.active-menu-item {
+  color: #ffffff; /* Change this to your desired color */
+}
+
+.tranistion-custom {
+  transition: all ease-in-out 300ms;
+}

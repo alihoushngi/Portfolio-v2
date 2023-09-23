@@ -32,7 +32,7 @@ const MainSkills = () => {
                   alt={skills.name}
                   width={30}
                   height={30}
-                  className="w-auto h-auto grayscale hover:grayscale-0 z-50 transition-all"
+                  className="w-auto h-auto grayscale hover:grayscale-0 z-50 transition-all cursor-pointer"
                   priority
                 />
               </SwiperSlide>
