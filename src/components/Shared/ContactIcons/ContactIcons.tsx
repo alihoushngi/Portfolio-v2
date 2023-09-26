@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import { ContactSochial, SocialImageWrapperStyle } from "./ContactIcon";
 import Link from "next/link";
