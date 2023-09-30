@@ -7,7 +7,7 @@ export const InfoWrapperStyle = styled.div`
   padding: 40px 40px;
   display: flex;
   align-items: start;
-  gap: 30px;
+  gap: 20px;
 
   @media (max-width: 1024px) {
     padding: 1rem;
