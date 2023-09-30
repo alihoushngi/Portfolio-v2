@@ -4,7 +4,7 @@ import { styled } from "styled-components";
 
 //style
 export const InfoWrapperStyle = styled.div`
-  padding: 50px 45px;
+  padding: 40px 40px;
   display: flex;
   align-items: start;
   gap: 30px;
