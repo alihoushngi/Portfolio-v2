@@ -14,7 +14,7 @@ const DownNotice = () => {
         <StyleDownNoticeChevron></StyleDownNoticeChevron>
         <StyleDownNoticeChevron></StyleDownNoticeChevron>
         <StyleDownNoticeChevron></StyleDownNoticeChevron>
-        <StyleDownNoticeText>Scroll down</StyleDownNoticeText>
+        {/* <StyleDownNoticeText>Scroll down</StyleDownNoticeText> */}
       </StyleDownNoticeContainer>
     </>
   );

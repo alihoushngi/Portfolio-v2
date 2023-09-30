@@ -2,13 +2,13 @@ import styled from "styled-components";
 
 export const StyleDownNoticeContainer = styled.div`
   position: relative;
-  width: 24px;
-  height: 24px;
+  width: 10px;
+  height: 10px;
 `;
 
 export const StyleDownNoticeChevron = styled.div`
   position: absolute;
-  width: 28px;
+  width: 15px;
   height: 8px;
   opacity: 0;
   transform: scale3d(0.5, 0.5, 0.5);
@@ -67,7 +67,7 @@ export const StyleDownNoticeText = styled.div`
   margin-top: 75px;
   margin-left: -30px;
   font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
-  font-size: 12px;
+  font-size: 10px;
   color: #fff;
   text-transform: uppercase;
   white-space: nowrap;

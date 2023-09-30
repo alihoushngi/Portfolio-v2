@@ -9,7 +9,7 @@ export default function Home() {
     <main>
       <Navbar />
       <Layout customClass="flex-col">
-        <div className="sm:hidden fixed bottom-14 right-14 z-50">
+        <div className="sm:hidden fixed bottom-14 right-4 z-50">
           <DownNotice />
         </div>
         <MainTopSectionWrapper />
