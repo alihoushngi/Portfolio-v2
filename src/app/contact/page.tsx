@@ -2,7 +2,13 @@ import ContactWrapperLeftSide from "@/components/Base/Contact/ContactWrapperLeft
 import ContactWrapperRightSide from "@/components/Base/Contact/ContactWrapperRightSide/ContactWrapperRightSide";
 import Layout from "@/components/Base/Layout/Layout";
 import Navbar from "@/components/Base/Navbar/Navbar";
+import { Metadata } from "next";
 import React from "react";
+
+export const metadata: Metadata = {
+  title: "Contact",
+  description: "Frontend Developer",
+};
 
 const page = () => {
   return (

@@ -1,7 +1,7 @@
 "use client";
 
 import CardContainer from "@/components/Containers/CardContainer/CardContainer";
-import Avatar from "../../../../../public/static/images/Avatar.jpg";
+import Avatar from "../../../../../public/static/images/Avatar3.jpg";
 import React from "react";
 import { ImageStyled, ImageWrapperStyled } from "./InfoPhotoStyle";
 

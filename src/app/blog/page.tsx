@@ -1,7 +1,13 @@
 import Layout from "@/components/Base/Layout/Layout";
 import Navbar from "@/components/Base/Navbar/Navbar";
 import TypingStyle from "@/components/Shared/TypingStyle/TypingStyle";
+import { Metadata } from "next";
 import React from "react";
+
+export const metadata: Metadata = {
+  title: "Blog",
+  description: "Frontend Developer",
+};
 
 const page = () => {
   return (

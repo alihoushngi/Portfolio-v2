@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import Avatar from "../../../../../public/static/images/Avatar.jpg";
+import Avatar from "../../../../../public/static/images/Avatar2.jpg";
 import {
   DescribtionWrapperStyled,
   InfoStyled,

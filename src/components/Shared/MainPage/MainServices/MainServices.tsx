@@ -21,7 +21,6 @@ const MainServices = () => {
   return (
     <CardContainer containerStyle="max-h-full h-full flex items-stretch">
       <ServicesWrapper>
-        <ServicesLink href="/services" />
         <ServicesIconWrapperStyle>
           <ServicesImage priority src={coding} alt="coding" width={30} />
           <ServicesImage priority src={photoshop} alt="photoshop" width={30} />
@@ -35,9 +34,6 @@ const MainServices = () => {
             </ServicesInfoDescribeStyle>
             <ServicesInfoTitleStyle>Services</ServicesInfoTitleStyle>
           </ServicesInfoSyle>
-          <ServicesInfoButtonWrapperStyle>
-            <ServicesInfoButtonStyle>{"-->"}</ServicesInfoButtonStyle>
-          </ServicesInfoButtonWrapperStyle>
         </ServicesInfoWrapperStyle>
       </ServicesWrapper>
     </CardContainer>
