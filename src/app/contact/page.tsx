@@ -8,7 +8,7 @@ const page = () => {
   return (
     <>
       <Navbar />
-      <Layout>
+      <Layout customClass="max-md:flex-col-reverse">
         <ContactWrapperLeftSide />
         <ContactWrapperRightSide />
       </Layout>

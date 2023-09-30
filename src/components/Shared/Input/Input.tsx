@@ -1,4 +1,7 @@
+"use client";
+
 import React from "react";
+import { InputSyle } from "./StyleInput";
 
 interface IInputPropsType {
   IsLable?: boolean;
@@ -16,10 +19,14 @@ const Input = ({
   InputPlaceholder,
 }: IInputPropsType) => {
   return (
-    <div>
+    <>
       {IsLable && <label htmlFor={InputName}>{LableName}</label>}
-      <input type={InputType} name={InputName} placeholder={InputPlaceholder} />
-    </div>
+      <InputSyle
+        type={InputType}
+        name={InputName}
+        placeholder={InputPlaceholder}
+      />
+    </>
   );
 };
 

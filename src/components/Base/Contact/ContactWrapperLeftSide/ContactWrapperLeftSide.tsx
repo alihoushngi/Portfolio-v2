@@ -41,7 +41,7 @@ const contactData = [
 
 const ContactWrapperLeftSide = () => {
   return (
-    <div className="w-1/3">
+    <div className="w-1/3 max-md:w-full max-md:flex max-md:gap-9 max-md:mb-9 max-md:flex-col">
       <div>
         <h3 className="uppercase text-white">Contact Info</h3>
         <div className="mt-16 flex flex-col gap-8">

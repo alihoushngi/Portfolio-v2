@@ -68,13 +68,13 @@
 
   @media (max-width: 920px) {
     .sectionContainers {
-      flex: 0 0 auto !important;
+      flex: 0 0 auto;
     }
   }
 
   @media (max-width: 767px) {
     .sectionContainers {
-      width: 100% !important;
+      width: 100%;
     }
   }
 }
@@ -94,4 +94,12 @@ body {
 
 .tranistion-custom {
   transition: all ease-in-out 300ms;
+}
+
+textarea {
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0.05),
+    rgba(255, 255, 255, 0.01)
+  );
 }

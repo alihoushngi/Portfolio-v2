@@ -18,6 +18,10 @@ export const Typing = styled.span`
   letter-spacing: 0.15em; /* Adjust as needed */
   animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
 
+  @media (max-width: 767px) {
+    white-space: pre-wrap;
+  }
+
   /* The typing effect */
   @keyframes typing {
     from {

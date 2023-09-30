@@ -8,7 +8,7 @@ const page = () => {
     <>
       <Navbar />
       <Layout customClass="flex-row max-sm:flex-col-reverse">
-        <div className="flex justify-center items-center text-center w-fit  text-xl select-none ">
+        <div className="flex justify-center items-center text-center w-fit  text-xl select-none">
           <TypingStyle>
             I am working hard to bring you valuable content. Please revisit this
             page shortly.

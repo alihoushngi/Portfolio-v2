@@ -25,7 +25,11 @@ const ConatctElement = ({
 }: IContactProps) => {
   return (
     <ContactElementWrapper href={ElementLink}>
-      <CardContainer>
+      <CardContainer
+        aos={false}
+        cardCustomStyle="max-md:w-fit"
+        containerStyle="max-md:w-fit max-md:flex-[unset] w-fit"
+      >
         <Image
           src={ContactElementImage}
           alt={ElementName}
