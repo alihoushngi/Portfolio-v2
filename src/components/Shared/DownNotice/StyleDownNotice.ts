@@ -1,11 +1,5 @@
 import styled from "styled-components";
 
-export const StyleDownNoticeContainer = styled.div`
-  position: relative;
-  width: 10px;
-  height: 10px;
-`;
-
 export const StyleDownNoticeChevron = styled.div`
   position: absolute;
   width: 15px;
@@ -58,25 +52,6 @@ export const StyleDownNoticeChevron = styled.div`
     100% {
       opacity: 0;
       transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
-    }
-  }
-`;
-
-export const StyleDownNoticeText = styled.div`
-  display: block;
-  margin-top: 75px;
-  margin-left: -30px;
-  font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
-  font-size: 10px;
-  color: #fff;
-  text-transform: uppercase;
-  white-space: nowrap;
-  opacity: 0.25;
-  animation: pulse 2s linear alternate infinite;
-
-  @keyframes pulse {
-    to {
-      opacity: 1;
     }
   }
 `;

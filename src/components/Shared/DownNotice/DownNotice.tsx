@@ -1,21 +1,16 @@
 "use client";
 
 import React from "react";
-import {
-  StyleDownNoticeChevron,
-  StyleDownNoticeContainer,
-  StyleDownNoticeText,
-} from "./StyleDownNotice";
+import { StyleDownNoticeChevron } from "./StyleDownNotice";
 
 const DownNotice = () => {
   return (
     <>
-      <StyleDownNoticeContainer>
+      <div className="relative w-3 h-3">
         <StyleDownNoticeChevron></StyleDownNoticeChevron>
         <StyleDownNoticeChevron></StyleDownNoticeChevron>
         <StyleDownNoticeChevron></StyleDownNoticeChevron>
-        {/* <StyleDownNoticeText>Scroll down</StyleDownNoticeText> */}
-      </StyleDownNoticeContainer>
+      </div>
     </>
   );
 };

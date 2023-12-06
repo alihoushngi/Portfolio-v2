@@ -1,39 +1,19 @@
 import React from "react";
-import {
-  ContactSocialWrapperStyle,
-  ContactInfoButtonStyle,
-  ContactInfoButtonWrapperStyle,
-  ContactInfoDescribeStyle,
-  ContactInfoSyle,
-  ContactInfoTitleStyle,
-  ContactInfoWrapperStyle,
-  ContactLink,
-  ContactWrapper,
-} from "./MainContactStyle";
+
 import CardContainer from "@/components/Containers/CardContainer/CardContainer";
 import ContactIcons from "../../ContactIcons/ContactIcons";
-import Linkedin from "../../../../../public/static/images/linkedinMessage.png";
-import Gmail from "../../../../../public/static/images/gmailMessage.png";
-
-const ContactList = [
-  {
-    name: "Gmail",
-    Link: "mailto:alihoushngi@gmail.com",
-    Icon: Gmail,
-  },
-  {
-    name: "Linkedin",
-    Link: "https://www.linkedin.com/in/alihoushangi/",
-    Icon: Linkedin,
-  },
-];
+import Link from "next/link";
+import { ContactList } from "./MainContactList";
 
 const MainContact = () => {
   return (
     <CardContainer containerStyle="max-h-full h-full flex items-stretch">
-      <ContactWrapper>
-        <ContactLink href="/contact" />
-        <ContactSocialWrapperStyle>
+      <div className="transition-all duration-700 flex justify-between flex-col relative w-full max-w-full h-full overflow-x-hidden grayscale hover:grayscale-0 z-50">
+        <Link
+          href="/contact"
+          className="absolute left-0 top-0 rounded-[30px] w-full h-full opacity-0 z-10"
+        />
+        <div className="relative overflow-hidden flex justify-evenly w-full p-4 m-auto">
           {ContactList.map((item, index) => {
             return (
               <ContactIcons
@@ -46,17 +26,20 @@ const MainContact = () => {
               />
             );
           })}
-        </ContactSocialWrapperStyle>
-        <ContactInfoWrapperStyle>
-          <ContactInfoSyle>
-            <ContactInfoDescribeStyle>CALL ME</ContactInfoDescribeStyle>
-            <ContactInfoTitleStyle>Contact</ContactInfoTitleStyle>
-          </ContactInfoSyle>
-          <ContactInfoButtonWrapperStyle>
-            <ContactInfoButtonStyle>{"-->"}</ContactInfoButtonStyle>
-          </ContactInfoButtonWrapperStyle>
-        </ContactInfoWrapperStyle>
-      </ContactWrapper>
+        </div>
+        <div className="flex justify-between items-center">
+          <div className="flex flex-col gap-[6px]">
+            <h4 className="text-xs font-light">CALL ME</h4>
+            <h2 className="text-xl font-bold text-white">Contact</h2>
+          </div>
+          <button
+            type="button"
+            className="transition-all duration-300 ease-in font-thin text-[10px] border rounded-[10px] border-gray-500 p-[5px] z-50 hover:text-xs hover:font-bold hover:text-white"
+          >
+            {"-->"}
+          </button>
+        </div>
+      </div>
     </CardContainer>
   );
 };

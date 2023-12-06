@@ -1,30 +1,18 @@
 "use client";
 
 import React from "react";
-import {
-  ConactElementDataWrapper,
-  ConatctElementAddress,
-  ContactElementName,
-  ContactElementWrapper,
-} from "./StyleContactElement";
 import CardContainer from "@/components/Containers/CardContainer/CardContainer";
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
+import { IContactProps } from "./ContactElementTypes";
+import Link from "next/link";
+import { ReactComponent } from "@/types/types";
 
-interface IContactProps {
-  ElementLink: string;
-  ContactElementImage: StaticImageData;
-  ElementName: string;
-  ElementAddress: string;
-}
+const ConatctElement: ReactComponent<IContactProps> = (props) => {
+  const { ElementLink, ContactElementImage, ElementName, ElementAddress } =
+    props;
 
-const ConatctElement = ({
-  ElementLink,
-  ContactElementImage,
-  ElementName,
-  ElementAddress,
-}: IContactProps) => {
   return (
-    <ContactElementWrapper href={ElementLink}>
+    <Link href={ElementLink} className="flex gap-4 items-center max-md:w-fit">
       <CardContainer
         aos={false}
         cardCustomStyle="max-md:w-fit"
@@ -37,11 +25,11 @@ const ConatctElement = ({
           height={25}
         />
       </CardContainer>
-      <ConactElementDataWrapper>
-        <ContactElementName>{ElementName}</ContactElementName>
-        <ConatctElementAddress>{ElementAddress}</ConatctElementAddress>
-      </ConactElementDataWrapper>
-    </ContactElementWrapper>
+      <div>
+        <h4 className="uppercase">{ElementName}</h4>
+        <p className="text-white uppercase">{ElementAddress}</p>
+      </div>
+    </Link>
   );
 };
 

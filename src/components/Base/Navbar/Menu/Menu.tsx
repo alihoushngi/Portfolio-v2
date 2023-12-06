@@ -1,8 +1,6 @@
 "use client";
 
-import React, { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import React from "react";
 import Link from "next/link";
 import { StyledMenu } from "./MenuStyled";
 import { usePathname } from "next/navigation";
@@ -15,18 +13,10 @@ interface menuTypes {
 const Menu = ({ open }: menuTypes) => {
   const routeName = usePathname();
 
-  useEffect(() => {
-    AOS.init();
-  }, []);
-
   return (
     <StyledMenu open={open}>
       <ul>
-        <li
-          data-aos="zoom-in"
-          data-aos-duration="1000"
-          className="aos-init tranistion-custom hover:text-white"
-        >
+        <li className="tranistion-custom hover:text-white">
           <Link
             href="/"
             className={`menu-item ${
@@ -36,11 +26,7 @@ const Menu = ({ open }: menuTypes) => {
             Home
           </Link>
         </li>
-        <li
-          data-aos="zoom-in"
-          data-aos-duration="1500"
-          className="aos-init tranistion-custom hover:text-white"
-        >
+        <li className="tranistion-custom hover:text-white">
           <Link
             href="/about"
             className={`menu-item ${
@@ -50,11 +36,7 @@ const Menu = ({ open }: menuTypes) => {
             About
           </Link>
         </li>
-        <li
-          data-aos="zoom-in"
-          data-aos-duration="2000"
-          className="aos-init tranistion-custom hover:text-white"
-        >
+        <li className="tranistion-custom hover:text-white">
           <Link
             href="/project"
             className={`menu-item ${
@@ -64,11 +46,7 @@ const Menu = ({ open }: menuTypes) => {
             Project
           </Link>
         </li>
-        <li
-          data-aos="zoom-in"
-          data-aos-duration="2500"
-          className="aos-init tranistion-custom hover:text-white"
-        >
+        <li className="tranistion-custom hover:text-white">
           <Link
             href="/contact"
             className={`menu-item ${

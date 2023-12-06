@@ -1,9 +1,9 @@
 "use client";
 
+import React from "react";
+import Image from "next/image";
 import CardContainer from "@/components/Containers/CardContainer/CardContainer";
 import Avatar from "../../../../../public/static/images/Avatar3.jpg";
-import React from "react";
-import { ImageStyled, ImageWrapperStyled } from "./InfoPhotoStyle";
 
 const InfoPhoto = () => {
   return (
@@ -11,9 +11,14 @@ const InfoPhoto = () => {
       containerStyle="max-l:w-full justify-center md:w-[29%]"
       cardCustomStyle="md:w-fit max-md:w-full"
     >
-      <ImageWrapperStyled>
-        <ImageStyled priority src={Avatar} alt="avatar" />
-      </ImageWrapperStyled>
+      <div className="w-full h-full relative overflow-hidden rounded-2xl flex-none m-auto max-2l:w-52 max-2l:h-52 max-l:w-56 max-l:h-56">
+        <Image
+          className="block max-w-full w-full h-full object-cover border-0 rounded-none shadow-none grayscale"
+          priority
+          src={Avatar}
+          alt="info avatar"
+        />
+      </div>
     </CardContainer>
   );
 };

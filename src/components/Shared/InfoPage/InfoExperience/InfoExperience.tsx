@@ -1,33 +1,50 @@
 "use client";
 
-import React from "react";
+import React, { useEffect } from "react";
 import CardContainer from "@/components/Containers/CardContainer/CardContainer";
-import {
-  ExperienceSectionTitleStyle,
-  ExperienceCompanyStyle,
-  ExperienceDateStyle,
-  ExperienceItemStyle,
-  ExperienceListStyle,
-  ExperienceTitleStyle,
-} from "./InfoExperienceStyle";
+import { InfoExperienceList } from "./InfoExperienceList";
+import Link from "next/link";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const InfoExperience = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
-    <CardContainer containerStyle="max-l:w-full" cardCustomStyle="w-full">
-      <ExperienceSectionTitleStyle>Experience</ExperienceSectionTitleStyle>
-      <ExperienceListStyle>
-        <ExperienceItemStyle>
-          <ExperienceDateStyle>2021-2022</ExperienceDateStyle>
-          <ExperienceTitleStyle>Frontend Developer</ExperienceTitleStyle>
-          <ExperienceCompanyStyle>Pezhvak Dadeh Khazar</ExperienceCompanyStyle>
-        </ExperienceItemStyle>
-        <ExperienceItemStyle>
-          <ExperienceDateStyle>2019-2020</ExperienceDateStyle>
-          <ExperienceTitleStyle>WordPress Designer</ExperienceTitleStyle>
-          <ExperienceCompanyStyle>Nila Soft</ExperienceCompanyStyle>
-        </ExperienceItemStyle>
-      </ExperienceListStyle>
-    </CardContainer>
+    <div className="w-full">
+      <h2
+        data-aos="fade-up"
+        data-aos-duration="1500"
+        className="aos-init text-3xl uppercase text-white mb-1 text-center font-bold"
+      >
+        Experience
+      </h2>
+      <div className="flex flex-wrap items-center justify-center gap-4 w-full">
+        {InfoExperienceList.map((data, index) => {
+          return (
+            <CardContainer
+              key={index}
+              containerStyle="max-l:w-full grow shrink basis-[45%]"
+              cardCustomStyle="w-full"
+            >
+              <Link href={data.link}>
+                <span className="text-[#bcbcbc] opacity-60 text-base font-medium mb-3">
+                  {data.date}
+                </span>
+                <h3 className="text-lg text-white opacity-90 mb-2">
+                  {data.positionTitle}
+                </h3>
+                <span className="text-[#bcbcbc] font-normal text-sm opacity-60 m-0">
+                  {data.company}
+                </span>
+              </Link>
+            </CardContainer>
+          );
+        })}
+      </div>
+    </div>
   );
 };
 
