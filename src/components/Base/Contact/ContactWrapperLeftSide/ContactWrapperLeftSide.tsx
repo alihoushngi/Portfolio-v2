@@ -1,43 +1,7 @@
-import ConatctElement from "@/components/Shared/ConatctElement/ConatctElement";
 import React from "react";
-import Mail from "../../../../../public/static/images/gmailMessage.png";
-import Phone from "../../../../../public/static/images/PhoneWhite.png";
-import linkedin from "../../../../../public/static/images/linkedin.png";
+import ConatctElement from "@/components/Shared/ConatctElement/ConatctElement";
 import ContactIcons from "@/components/Shared/ContactIcons/ContactIcons";
-
-const ContactList = [
-  {
-    name: "Gmail",
-    Link: "mailto:alihoushngi@gmail.com",
-    Icon: Mail,
-  },
-  {
-    name: "Linkedin",
-    Link: "https://www.linkedin.com/in/alihoushangi/",
-    Icon: linkedin,
-  },
-];
-
-const contactData = [
-  {
-    ContactElementImage: Mail,
-    ElementName: "Mail",
-    ElementAddress: "blumy.info@gmail.com",
-    link: "mailto:alihoushngi@gmail.com",
-  },
-  {
-    ContactElementImage: Phone,
-    ElementName: "Phone",
-    ElementAddress: "+98 911-544-7316",
-    link: "tel:+989115447316",
-  },
-  {
-    ContactElementImage: linkedin,
-    ElementName: "linkedin",
-    ElementAddress: "alihoushangi",
-    link: "https://www.linkedin.com/in/alihoushangi/",
-  },
-];
+import { ContactList, contactData } from "./ContactWrapperLeftSideList";
 
 const ContactWrapperLeftSide = () => {
   return (

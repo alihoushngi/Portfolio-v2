@@ -1,12 +1,9 @@
+import { ReactComponent } from "@/types/types";
 import React from "react";
+import { ILayoutTypes } from "./LayoutTypes";
 
-const Layout = ({
-  children,
-  customClass,
-}: {
-  children: React.ReactNode;
-  customClass?: string;
-}) => {
+const Layout: ReactComponent<ILayoutTypes> = (props) => {
+  const { children, customClass } = props;
   return (
     <section className="pt-20 max-sm:pt-0">
       <div

@@ -1,5 +1,4 @@
 import React from "react";
-import { SkillsWrapper } from "./MainSkillsStyled";
 import { mySkills } from "@/data/mySkills";
 import Image from "next/image";
 
@@ -11,7 +10,7 @@ import CardContainer from "@/components/Containers/CardContainer/CardContainer";
 const MainSkills = () => {
   return (
     <CardContainer containerStyle="w-full h-full" cardCustomStyle="h-fit z-10">
-      <SkillsWrapper>
+      <div className="relative w-full max-w-full h-full overflow-x-hidden">
         <Swiper
           className="w-full h-full max-md:max-h-[200px] z-10"
           modules={[Autoplay]}
@@ -39,7 +38,7 @@ const MainSkills = () => {
             );
           })}
         </Swiper>
-      </SkillsWrapper>
+      </div>
     </CardContainer>
   );
 };

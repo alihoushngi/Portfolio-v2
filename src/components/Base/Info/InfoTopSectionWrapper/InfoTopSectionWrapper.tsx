@@ -18,7 +18,7 @@ const InfoTopSectionWrapper = () => {
         <div className="h-full max-l:flex-grow-0 max-l:flex-shrink-0 max-l:basis-auto w-full flex flex-col justify-between gap-3">
           <div className="relative w-full flex flex-wrap content-start py-0 h-fit max-md:p-0 mb-0">
             <h2
-              className="text-white text-6xl font-bold uppercase tracking-tighter items-center max-2l:text-4xl text-center w-full aos-init"
+              className="text-white text-5xl font-bold uppercase tracking-tighter items-center max-2l:text-3xl text-center w-full aos-init"
               data-aos="fade-up"
               data-aos-duration="1500"
             >

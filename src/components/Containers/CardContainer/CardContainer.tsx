@@ -2,18 +2,11 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { ReactComponent } from "@/types/types";
+import { ICardContainerProps } from "./CardContainerTypes";
 
-const CardContainer = ({
-  children,
-  containerStyle,
-  cardCustomStyle,
-  aos = true,
-}: {
-  children: React.ReactNode;
-  aos?: boolean;
-  containerStyle?: string;
-  cardCustomStyle?: string;
-}) => {
+const CardContainer: ReactComponent<ICardContainerProps> = (props) => {
+  const { aos, children, cardCustomStyle, containerStyle } = props;
   useEffect(() => {
     AOS.init();
   }, []);

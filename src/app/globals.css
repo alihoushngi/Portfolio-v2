@@ -88,8 +88,13 @@ body {
   align-items: center;
 }
 
+.menu-item {
+  padding-bottom: 0.5rem;
+}
+
 .active-menu-item {
   color: #ffffff; /* Change this to your desired color */
+  border-bottom: 1px solid #ffffff;
 }
 
 .tranistion-custom {
@@ -102,4 +107,35 @@ textarea {
     rgba(255, 255, 255, 0.05),
     rgba(255, 255, 255, 0.01)
   );
+}
+/* 
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+
+.animate-typing-custom {
+  animation: typing 3.5s steps(40end), blink-caret 0.75s step-end infinite;
+} */
+
+.translateOpen {
+  transform: translate3d(0px, 0, 0px) scale(1, 1) scale(1, 1);
+}
+
+.translateClose {
+  transform: translate3d(0px, -300px, 0px) scale(1, 0.5) scale(1, 0.5);
 }

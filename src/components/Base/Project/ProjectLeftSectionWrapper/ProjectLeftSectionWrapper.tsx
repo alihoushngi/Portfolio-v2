@@ -3,23 +3,7 @@
 import React from "react";
 import CardContainer from "@/components/Containers/CardContainer/CardContainer";
 import ProjectCard from "@/components/Shared/ProjectCard/ProjectCard";
-import AbzarCheck from "../../../../../public/static/images/AbzarCheck.jpg";
-import Diba from "../../../../../public/static/images/Diba.jpg";
-
-const ProjectList = [
-  {
-    ProjectName: "Abzar Check",
-    ProjectLink: "/project",
-    ProjectTagLine: "Wordpress",
-    ProjectImage: AbzarCheck,
-  },
-  {
-    ProjectName: "Diba",
-    ProjectLink: "/project",
-    ProjectTagLine: "Wordpress",
-    ProjectImage: Diba,
-  },
-];
+import { ProjectList } from "./ProjectLeftSectionWrapperList";
 
 const ProjectLeftSectionWrapper = () => {
   return (

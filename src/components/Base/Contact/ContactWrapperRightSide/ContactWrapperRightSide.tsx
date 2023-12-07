@@ -1,24 +1,7 @@
 import React from "react";
 import CardContainer from "@/components/Containers/CardContainer/CardContainer";
 import Input from "@/components/Shared/Input/Input";
-
-const FormAtt = [
-  {
-    InputType: "text",
-    InputName: "name",
-    InputPlaceholder: "Name",
-  },
-  {
-    InputType: "email",
-    InputName: "email",
-    InputPlaceholder: "Email",
-  },
-  {
-    InputType: "text",
-    InputName: "subject",
-    InputPlaceholder: "Subject",
-  },
-];
+import { FormAtt } from "./ContactWrapperRightSideFormList";
 
 const ContactWrapperRightSide = () => {
   return (
