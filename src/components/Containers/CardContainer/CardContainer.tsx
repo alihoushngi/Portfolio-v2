@@ -6,7 +6,7 @@ import { ReactComponent } from "@/types/types";
 import { ICardContainerProps } from "./CardContainerTypes";
 
 const CardContainer: ReactComponent<ICardContainerProps> = (props) => {
-  const { aos, children, cardCustomStyle, containerStyle } = props;
+  const { aos = true, children, cardCustomStyle, containerStyle } = props;
   useEffect(() => {
     AOS.init();
   }, []);

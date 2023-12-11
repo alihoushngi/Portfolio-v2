@@ -10,6 +10,7 @@ const InfoPhoto = () => {
     <CardContainer
       containerStyle="max-l:w-full justify-center md:w-[29%]"
       cardCustomStyle="md:w-fit max-md:w-full"
+      aos
     >
       <div className="w-full h-full relative overflow-hidden rounded-2xl flex-none m-auto max-2l:w-52 max-2l:h-52 max-l:w-56 max-l:h-56">
         <Image
