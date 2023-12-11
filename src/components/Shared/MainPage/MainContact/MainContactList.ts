@@ -6,10 +6,12 @@ export const ContactList = [
     name: "Gmail",
     Link: "mailto:alihoushngi@gmail.com",
     Icon: Gmail,
+    ariaLable: "ali houshangi Gmail Link",
   },
   {
     name: "Linkedin",
     Link: "https://www.linkedin.com/in/alihoushangi/",
     Icon: Linkedin,
+    ariaLable: "ali houshangi Linkedin Link",
   },
 ];

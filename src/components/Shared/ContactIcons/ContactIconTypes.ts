@@ -6,4 +6,5 @@ export interface IContactProps {
   SocialIconAlt: string;
   SocialIconWidth: number;
   SocialIconheight: number;
+  SocialAriaLable: string;
 }

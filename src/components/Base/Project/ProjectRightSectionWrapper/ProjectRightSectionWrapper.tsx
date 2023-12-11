@@ -14,11 +14,7 @@ const ProjectRightSectionWrapper = () => {
     <div className="w-2/3 flex min-h-[1px] relative max-sm:w-full ">
       <div className="relative flex flex-wrap content-start">
         <div className="relative w-full flex flex-wrap content-start py-0 h-fit max-md:p-0 mb-3">
-          <h2
-            className="text-white text-4xl font-bold uppercase tracking-tighter items-center max-2l:text-4xl text-center w-full aos-init"
-            data-aos="fade-up"
-            data-aos-duration="1500"
-          >
+          <h2 className="text-white text-3xl font-bold items-center max-2l:text-4xl text-center w-full">
             ALL PROJECT
           </h2>
         </div>
@@ -37,6 +33,7 @@ const ProjectRightSectionWrapper = () => {
                   ProjectImageAlt={item.ProjectName}
                   ProjectTagline={item.ProjectTagLine}
                   ProjectTitle={item.ProjectName}
+                  ProjectAriaLabel={item.AriaLable}
                 />
               </CardContainer>
             );
@@ -57,6 +54,7 @@ const ProjectRightSectionWrapper = () => {
                   ProjectTagline={item.ProjectTagLine}
                   ProjectTitle={item.ProjectName}
                   ProjectWidth={300}
+                  ProjectAriaLabel={item.AriaLable}
                 />
               </CardContainer>
             );
@@ -77,6 +75,7 @@ const ProjectRightSectionWrapper = () => {
                   ProjectTagline={item.ProjectTagLine}
                   ProjectTitle={item.ProjectName}
                   ProjectWidth={300}
+                  ProjectAriaLabel={item.AriaLable}
                 />
               </CardContainer>
             );

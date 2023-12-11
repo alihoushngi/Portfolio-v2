@@ -108,6 +108,15 @@ textarea {
     rgba(255, 255, 255, 0.01)
   );
 }
+
+input {
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0.05),
+    rgba(255, 255, 255, 0.01)
+  );
+}
+
 /* 
 @keyframes typing {
   from {

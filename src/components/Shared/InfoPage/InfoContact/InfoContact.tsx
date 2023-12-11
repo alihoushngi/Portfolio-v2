@@ -18,6 +18,7 @@ const InfoContact = () => {
             SocialIconAlt={item.name}
             SocialIconWidth={25}
             SocialIconheight={25}
+            SocialAriaLable={item.AriaLable}
           />
         );
       })}

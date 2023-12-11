@@ -11,6 +11,7 @@ const MainBlog = () => {
         <Link
           href="/blog"
           className="absolute left-0 top-0 rounded-[30px] w-full h-full opacity-0 z-10"
+          aria-label="Ali houshangi blog page Link in main about"
         />
         <div className="relative overflow-hidden flex-none p-4 m-auto">
           <Image
@@ -23,7 +24,7 @@ const MainBlog = () => {
         </div>
         <div className="flex justify-between items-center">
           <div className="flex flex-col gap-[6px]">
-            <h4 className="text-xs font-light">MY BLOGS EVRYONE NEED</h4>
+            <h3 className="text-xs font-light">MY BLOGS EVRYONE NEED</h3>
             <h2 className="text-xl font-bold text-white">Blog</h2>
           </div>
           <button

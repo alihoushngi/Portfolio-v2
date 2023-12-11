@@ -13,6 +13,7 @@ const ContactIcons: ReactComponent<IContactProps> = (props) => {
     SocialIconAlt,
     SocialIconWidth,
     SocialIconheight,
+    SocialAriaLable,
   } = props;
 
   return (
@@ -21,6 +22,7 @@ const ContactIcons: ReactComponent<IContactProps> = (props) => {
         href={SocialLink}
         target="_blank"
         className="w-full h-full flex justify-center items-center"
+        aria-label={SocialAriaLable}
       >
         <Image
           priority

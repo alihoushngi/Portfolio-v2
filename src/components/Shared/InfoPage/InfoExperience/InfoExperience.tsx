@@ -1,24 +1,16 @@
 "use client";
 
-import React, { useEffect } from "react";
+import React from "react";
 import CardContainer from "@/components/Containers/CardContainer/CardContainer";
 import { InfoExperienceList } from "./InfoExperienceList";
 import Link from "next/link";
-import AOS from "aos";
+
 import "aos/dist/aos.css";
 
 const InfoExperience = () => {
-  useEffect(() => {
-    AOS.init();
-  }, []);
-
   return (
     <div className="w-full">
-      <h2
-        data-aos="fade-up"
-        data-aos-duration="1500"
-        className="aos-init text-3xl uppercase text-white mb-1 text-center font-bold"
-      >
+      <h2 className="text-3xl uppercase text-white mb-1 text-center font-bold">
         Experience
       </h2>
       <div className="flex flex-wrap items-center justify-center gap-4 w-full">
@@ -29,7 +21,7 @@ const InfoExperience = () => {
               containerStyle="max-l:w-full grow shrink basis-[45%]"
               cardCustomStyle="w-full"
             >
-              <Link href={data.link}>
+              <Link href={data.link} aria-label={data.ariaLable}>
                 <span className="text-[#bcbcbc] opacity-60 text-base font-medium mb-3">
                   {data.date}
                 </span>

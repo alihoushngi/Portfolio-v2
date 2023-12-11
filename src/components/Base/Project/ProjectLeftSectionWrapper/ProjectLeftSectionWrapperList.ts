@@ -8,17 +8,20 @@ export const ProjectList = [
     ProjectLink: "https://abzarcheck.com/",
     ProjectTagLine: "Wordpress",
     ProjectImage: AbzarCheck,
+    AriaLable: "AbzarCheck Design By Ali Houshangi",
   },
   {
     ProjectName: "Diba",
     ProjectLink: "https://diba.studio/",
     ProjectTagLine: "Wordpress",
     ProjectImage: Diba,
+    AriaLable: "Diba Design By Ali Houshangi",
   },
   {
     ProjectName: "Nootbook",
     ProjectLink: "https://github.com/alihoushngi/Notebook",
     ProjectTagLine: "Javascript",
     ProjectImage: Nootbook,
+    AriaLable: "Nootbook Design By Ali Houshangi",
   },
 ];

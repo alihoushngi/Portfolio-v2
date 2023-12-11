@@ -7,4 +7,5 @@ export interface IProjectCardProps {
   ProjectTagline: string;
   ProjectTitle: string;
   ProjectWidth: number;
+  ProjectAriaLabel: string;
 }

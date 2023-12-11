@@ -11,27 +11,31 @@ export const ProjectListOne = [
     ProjectLink: "https://github.com/alihoushngi/Chatroom",
     ProjectTagLine: "NextJS",
     ProjectImage: Chatroom,
+    AriaLable: "Chatroom Design By Ali Houshangi",
   },
   {
     ProjectName: "Kanonesabz",
     ProjectLink: "https://kanoonesabz.ir/",
     ProjectTagLine: "Wordpress",
     ProjectImage: Kanonesabz,
+    AriaLable: "Kanonesabz Design By Ali Houshangi",
   },
 ];
 
 export const ProjectListTwo = [
   {
-    ProjectName: "Pikkap",
+    ProjectName: "Pikaap",
     ProjectLink: "http://pikaap.ir/",
     ProjectTagLine: "ReactJS",
     ProjectImage: Pikkap,
+    AriaLable: "Pikaap Design By Ali Houshangi",
   },
   {
     ProjectName: "Budgget",
     ProjectLink: "https://github.com/alihoushngi/weeklyBudget",
     ProjectTagLine: "Javascript",
     ProjectImage: Budgget,
+    AriaLable: "Budgget Design By Ali Houshangi",
   },
 ];
 
@@ -41,11 +45,13 @@ export const ProjectListThree = [
     ProjectLink: "https://github.com/alihoushngi/weeklyBudget",
     ProjectTagLine: "React",
     ProjectImage: Calc,
+    AriaLable: "Calculator Design By Ali Houshangi",
   },
   {
     ProjectName: "Portfolio",
     ProjectLink: "https://github.com/alihoushngi/Portfolio-v2",
     ProjectTagLine: "Next",
     ProjectImage: Portfolio,
+    AriaLable: "Portfolio Design By Ali Houshangi",
   },
 ];

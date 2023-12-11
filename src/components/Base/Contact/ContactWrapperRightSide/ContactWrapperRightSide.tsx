@@ -26,6 +26,7 @@ const ContactWrapperRightSide = () => {
               name="des"
               id="des"
               className="w-full border-none rounded-xl py-4 px-5 text-sm block text-white resize-none h-36"
+              placeholder="Type your message ..."
             ></textarea>
             <button className="w-full capitalize border-none rounded-xl py-4 px-5 text-sm bg-gray-700 text-white inline-block transition-all font-medium hover:bg-white hover:text-black">
               send message

@@ -12,6 +12,7 @@ const MainContact = () => {
         <Link
           href="/contact"
           className="absolute left-0 top-0 rounded-[30px] w-full h-full opacity-0 z-10"
+          aria-label="Ali houshangi contact page Link in main about"
         />
         <div className="relative overflow-hidden flex justify-evenly w-full p-4 m-auto">
           {ContactList.map((item, index) => {
@@ -23,13 +24,14 @@ const MainContact = () => {
                 SocialIconAlt={item.name}
                 SocialIconWidth={25}
                 SocialIconheight={25}
+                SocialAriaLable={item.ariaLable}
               />
             );
           })}
         </div>
         <div className="flex justify-between items-center">
           <div className="flex flex-col gap-[6px]">
-            <h4 className="text-xs font-light">CALL ME</h4>
+            <h3 className="text-xs font-light">CALL ME</h3>
             <h2 className="text-xl font-bold text-white">Contact</h2>
           </div>
           <button

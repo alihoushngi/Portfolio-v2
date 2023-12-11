@@ -14,6 +14,7 @@ const Menu: ReactComponent<menuTypes> = ({ open }) => {
       href: "/",
       className: `menu-item ${routeName === "/" ? "active-menu-item" : ""}`,
       name: "Home",
+      ariaLable: "My home menu item",
     },
     {
       href: "/about",
@@ -21,6 +22,7 @@ const Menu: ReactComponent<menuTypes> = ({ open }) => {
         routeName === "/about" ? "active-menu-item" : ""
       }`,
       name: "About",
+      ariaLable: "My about menu item",
     },
     {
       href: "/project",
@@ -28,6 +30,7 @@ const Menu: ReactComponent<menuTypes> = ({ open }) => {
         routeName === "/project" ? "active-menu-item" : ""
       }`,
       name: "Project",
+      ariaLable: "My Project menu item",
     },
     {
       href: "/contact",
@@ -35,11 +38,13 @@ const Menu: ReactComponent<menuTypes> = ({ open }) => {
         routeName === "/contact" ? "active-menu-item" : ""
       }`,
       name: "Contact",
+      ariaLable: "My contact menu item",
     },
     {
       href: "/blog",
       className: `menu-item ${routeName === "/blog" ? "active-menu-item" : ""}`,
       name: "Blog",
+      ariaLable: "My blog menu item",
     },
   ];
 
@@ -55,7 +60,11 @@ const Menu: ReactComponent<menuTypes> = ({ open }) => {
         {MenuItemList.map((data, index) => {
           return (
             <li key={index} className="tranistion-custom hover:text-white">
-              <Link href={data.href} className={data.className}>
+              <Link
+                aria-label={data.ariaLable}
+                href={data.href}
+                className={data.className}
+              >
                 {data.name}
               </Link>
             </li>

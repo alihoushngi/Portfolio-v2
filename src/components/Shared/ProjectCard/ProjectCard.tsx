@@ -12,10 +12,16 @@ const ProjectCard: ReactComponent<IProjectCardProps> = (props) => {
     ProjectTagline,
     ProjectTitle,
     ProjectWidth,
+    ProjectAriaLabel,
   } = props;
 
   return (
-    <Link target="_blank" href={ProjectLinkHref} className="z-50">
+    <Link
+      target="_blank"
+      href={ProjectLinkHref}
+      className="z-50"
+      aria-label={ProjectAriaLabel}
+    >
       <Image
         src={ProjectImageSrc}
         alt={ProjectImageAlt}

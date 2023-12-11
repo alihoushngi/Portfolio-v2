@@ -11,6 +11,7 @@ const MainAbout = () => {
         <Link
           href="/about"
           className="absolute left-0 top-0 rounded-[30px] w-full h-full opacity-0 z-10"
+          aria-label="Ali houshangi about page Link in main about"
         />
         <div className="w-[80%] overflow-hidden flex-none p-4 my-auto mx-5 max-2l:w-[60%] max-2l:m-auto max-l:w-56 max-sm:mb-5 max-sm:w-56">
           <Image
@@ -22,7 +23,7 @@ const MainAbout = () => {
         </div>
         <div className="flex justify-between items-center">
           <div className="flex flex-col gap-[6px]">
-            <h4 className="text-xs font-light">MORE ABOUT ME</h4>
+            <h3 className="text-xs font-light">MORE ABOUT ME</h3>
             <h2 className="text-xl font-bold text-white">About</h2>
           </div>
           <button

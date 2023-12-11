@@ -17,6 +17,7 @@ const ContactWrapperLeftSide = () => {
                 ContactElementImage={data.ContactElementImage}
                 ElementAddress={data.ElementAddress}
                 ElementName={data.ElementName}
+                ContactElementAriaLable={data.AriaLable}
               />
             );
           })}
@@ -32,6 +33,7 @@ const ContactWrapperLeftSide = () => {
                 SocialLink={item.Link}
                 SocialIconSrc={item.Icon}
                 SocialIconAlt={item.name}
+                SocialAriaLable={item.AriaLable}
                 SocialIconWidth={25}
                 SocialIconheight={25}
               />

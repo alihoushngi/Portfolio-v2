@@ -8,11 +8,20 @@ import Link from "next/link";
 import { ReactComponent } from "@/types/types";
 
 const ConatctElement: ReactComponent<IContactProps> = (props) => {
-  const { ElementLink, ContactElementImage, ElementName, ElementAddress } =
-    props;
+  const {
+    ElementLink,
+    ContactElementImage,
+    ElementName,
+    ElementAddress,
+    ContactElementAriaLable,
+  } = props;
 
   return (
-    <Link href={ElementLink} className="flex gap-4 items-center max-md:w-fit">
+    <Link
+      href={ElementLink}
+      aria-label={ContactElementAriaLable}
+      className="flex gap-4 items-center max-md:w-fit"
+    >
       <CardContainer
         aos={false}
         cardCustomStyle="max-md:w-fit"

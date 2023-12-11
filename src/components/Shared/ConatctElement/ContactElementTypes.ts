@@ -5,4 +5,5 @@ export interface IContactProps {
   ContactElementImage: StaticImageData;
   ElementName: string;
   ElementAddress: string;
+  ContactElementAriaLable: string;
 }

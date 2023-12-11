@@ -23,6 +23,7 @@ const ProjectLeftSectionWrapper = () => {
                 ProjectImageAlt={item.ProjectName}
                 ProjectTagline={item.ProjectTagLine}
                 ProjectTitle={item.ProjectName}
+                ProjectAriaLabel={item.AriaLable}
               />
             </CardContainer>
           );
