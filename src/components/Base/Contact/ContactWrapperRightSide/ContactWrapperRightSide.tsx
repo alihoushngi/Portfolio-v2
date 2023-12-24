@@ -5,7 +5,7 @@ import { FormAtt } from "./ContactWrapperRightSideFormList";
 
 const ContactWrapperRightSide = () => {
   return (
-    <div className="w-2/3 max-md:w-full">
+    <div className="w-2/3 max-md:w-full hidden">
       <CardContainer cardCustomStyle="p-10">
         <div className="flex flex-col min-h-[400px] relative z-20 ">
           <h1 className="text-5xl mb-9">

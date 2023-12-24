@@ -5,10 +5,12 @@ import { ContactList, contactData } from "./ContactWrapperLeftSideList";
 
 const ContactWrapperLeftSide = () => {
   return (
-    <div className="w-1/3 max-md:w-full max-md:flex max-md:gap-9 max-md:mb-9 max-md:flex-col">
+    <div className="w-full max-md:w-full flex max-md:gap-9 max-md:mb-9 flex-col items-center">
       <div>
-        <h3 className="uppercase text-white">Contact Info</h3>
-        <div className="mt-16 flex flex-col gap-8">
+        <h3 className="uppercase text-white font-bold text-4xl">
+          Contact Info
+        </h3>
+        <div className="mt-16 flex gap-8">
           {contactData.map((data, key) => {
             return (
               <ConatctElement
@@ -23,7 +25,7 @@ const ContactWrapperLeftSide = () => {
           })}
         </div>
       </div>
-      <div>
+      <div className="hidden">
         <h3 className="uppercase text-white mt-16">Social Info</h3>
         <div className="mt-8 flex gap-8">
           {ContactList.map((item, index) => {
