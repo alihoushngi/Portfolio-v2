@@ -3,7 +3,7 @@ export const InfoExperienceList = [
     date: "2023",
     positionTitle: "Frontend Developer",
     company: "Hira",
-    link: "https://hira.dev",
+    link: "/",
     ariaLable: "Hira website link",
   },
   {
