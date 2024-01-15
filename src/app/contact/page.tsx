@@ -16,7 +16,7 @@ const page = () => {
       <Navbar />
       <Layout customClass="max-md:flex-col-reverse">
         <ContactWrapperLeftSide />
-        <ContactWrapperRightSide />
+        {/* <ContactWrapperRightSide /> */}
       </Layout>
     </>
   );

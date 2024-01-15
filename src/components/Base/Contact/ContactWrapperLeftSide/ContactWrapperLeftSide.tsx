@@ -10,7 +10,7 @@ const ContactWrapperLeftSide = () => {
         <h3 className="uppercase text-white font-bold text-4xl">
           Contact Info
         </h3>
-        <div className="mt-16 flex gap-8">
+        <div className="mt-16 flex gap-8 max-md:flex-col">
           {contactData.map((data, key) => {
             return (
               <ConatctElement
