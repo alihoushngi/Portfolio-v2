@@ -1,16 +1,26 @@
 "use client";
 
-import React from "react";
+import React, { useEffect } from "react";
 import CardContainer from "@/components/Containers/CardContainer/CardContainer";
 import { InfoExperienceList } from "./InfoExperienceList";
 import Link from "next/link";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 import "aos/dist/aos.css";
 
 const InfoExperience = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <div className="w-full">
-      <h2 className="text-3xl uppercase text-white mb-1 text-center font-bold">
+      <h2
+        className="text-3xl uppercase text-white mb-1 text-center font-bold aos"
+        data-aos="fade-up"
+        data-aos-duration="1500"
+      >
         Experience
       </h2>
       <div className="flex flex-wrap items-center justify-center gap-4 w-full">

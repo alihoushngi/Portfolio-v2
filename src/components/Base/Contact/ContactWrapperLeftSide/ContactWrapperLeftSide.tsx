@@ -1,16 +1,28 @@
-import React from "react";
+"use client";
+
+import React, { useEffect } from "react";
 import ConatctElement from "@/components/Shared/ConatctElement/ConatctElement";
 import ContactIcons from "@/components/Shared/ContactIcons/ContactIcons";
 import { ContactList, contactData } from "./ContactWrapperLeftSideList";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const ContactWrapperLeftSide = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
-    <div className="w-full max-md:w-full flex max-md:gap-9 max-md:mb-9 flex-col items-center">
+    <div
+      className="w-full max-md:w-full flex max-md:gap-9 max-md:mb-9 flex-col items-center aos"
+      data-aos="fade-up"
+      data-aos-duration="1500"
+    >
       <div>
         <h3 className="uppercase text-white font-bold text-4xl">
           Contact Info
         </h3>
-        <div className="mt-16 flex gap-8 max-md:flex-col">
+        <div className="mt-8 flex gap-8 max-md:flex-col">
           {contactData.map((data, key) => {
             return (
               <ConatctElement

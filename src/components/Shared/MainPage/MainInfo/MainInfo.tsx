@@ -18,13 +18,13 @@ const MainInfo = () => {
           />
         </div>
         <div className="max-2l:pt-2 max-sm:pr-5">
-          <h3 className="text-[#bcbcbc] opacity-70 text-[10px] mb-1 max-2l:leading-5 max-l:text-sm">
+          <h3 className="text-[#bcbcbc] opacity-70 text-[10px] mb-1 max-2l:leading-7 max-l:text-[14px]">
             FRONTEND DEVELOPER
           </h3>
-          <h1 className="text-2xl leading-10 text-white font-medium mb-3 max-2l:text-2xl max-2l:leading-5 max-l:text-4xl max-l:leading-5 max-sm:text-sm">
+          <h1 className="text-2xl leading-10 text-white font-medium mb-3 max-2l:text-2xl max-2l:leading-7 max-l:text-4xl max-l:leading-5 max-sm:text-sm">
             Ali Houshangi
           </h1>
-          <h2 className="text-xs m-0 z-20 relative leading-6 max-2l:leading-5 max-l:text-xl max-l:leading-5 max-sm:text-[10px]">
+          <h2 className="text-xs m-0 z-20 relative leading-6 max-2l:leading-5 max-l:text-xl max-l:leading-7 max-sm:text-[10px]">
             I am a frontend web designer with a passion for Next.js technology
           </h2>
         </div>

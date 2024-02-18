@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@formspree/react": "^2.5.1",
     "@types/aos": "^3.0.4",
     "@types/node": "20.4.6",
     "@types/react": "18.2.18",

@@ -14,9 +14,9 @@ const page = () => {
   return (
     <>
       <Navbar />
-      <Layout customClass="max-md:flex-col-reverse">
+      <Layout customClass="max-md:flex-col-reverse flex-col justify-center item-center">
         <ContactWrapperLeftSide />
-        {/* <ContactWrapperRightSide /> */}
+        <ContactWrapperRightSide />
       </Layout>
     </>
   );
