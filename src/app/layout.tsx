@@ -6,7 +6,8 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Ali Houshangi | علی هوشنگی",
-  description: "Frontend Developer",
+  description:
+    "Ali Houshangi Frontend Developer | Develop with Javascript and work with NextJs library and coding with Typescript | design with TailwindCSS and Styled-Component",
 };
 
 export default function RootLayout({

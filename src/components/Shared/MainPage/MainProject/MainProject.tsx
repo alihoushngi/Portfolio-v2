@@ -9,6 +9,7 @@ const MainProject = () => {
     <CardContainer containerStyle="w-1/2 md:ms-2 max-md:w-full">
       <div className="transition-all duration-700 flex justify-between flex-col relative w-full max-w-full h-full overflow-x-hidden grayscale hover:grayscale-0 z-50">
         <Link
+          title="ali houshangi project page"
           href="/project"
           className="absolute left-0 top-0 rounded-[30px] w-full h-full opacity-0 z-10"
           aria-label="Ali houshangi Project page Link in main about"

@@ -17,6 +17,7 @@ const ProjectCard: ReactComponent<IProjectCardProps> = (props) => {
 
   return (
     <Link
+      title={ProjectTitle}
       target="_blank"
       href={ProjectLinkHref}
       className="z-50"

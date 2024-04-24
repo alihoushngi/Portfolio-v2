@@ -31,7 +31,11 @@ const InfoExperience = () => {
               containerStyle="max-l:w-full grow shrink basis-[45%]"
               cardCustomStyle="w-full"
             >
-              <Link href={data.link} aria-label={data.ariaLable}>
+              <Link
+                href={data.link}
+                aria-label={data.ariaLable}
+                title={data.company}
+              >
                 <span className="text-[#bcbcbc] opacity-60 text-base font-medium mb-3">
                   {data.date}
                 </span>

@@ -61,6 +61,7 @@ const Menu: ReactComponent<menuTypes> = ({ open }) => {
           return (
             <li key={index} className="tranistion-custom hover:text-white">
               <Link
+                title={data.name}
                 aria-label={data.ariaLable}
                 href={data.href}
                 className={data.className}

@@ -18,6 +18,7 @@ const ConatctElement: ReactComponent<IContactProps> = (props) => {
 
   return (
     <Link
+      title={ElementName}
       href={ElementLink}
       aria-label={ContactElementAriaLable}
       className="flex gap-4 items-center max-md:w-fit"

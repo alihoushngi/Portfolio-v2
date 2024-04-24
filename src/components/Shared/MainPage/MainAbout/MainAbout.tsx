@@ -9,6 +9,7 @@ const MainAbout = () => {
     <CardContainer containerStyle="w-[49%] flex items-stretch max-md:w-full">
       <div className="flex justify-between flex-col relative w-full max-w-full h-full overflow-x-hidden">
         <Link
+          title="ali houshangi about page"
           href="/about"
           className="absolute left-0 top-0 rounded-[30px] w-full h-full opacity-0 z-10"
           aria-label="Ali houshangi about page Link in main about"

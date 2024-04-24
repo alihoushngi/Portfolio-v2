@@ -9,6 +9,7 @@ const MainBlog = () => {
     <CardContainer containerStyle="max-h-full h-full flex items-stretch">
       <div className="transition-all duration-700 flex justify-between flex-col relative w-full max-w-full h-full overflow-x-hidden grayscale hover:grayscale-0 z-50">
         <Link
+          title="ali houshangi blog page"
           href="/blog"
           className="absolute left-0 top-0 rounded-[30px] w-full h-full opacity-0 z-10"
           aria-label="Ali houshangi blog page Link in main about"
