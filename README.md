@@ -46,7 +46,7 @@ Hi, I'm **Ali Hooshangi** – a passionate frontend developer with 6+ years of e
 
 ## 🌈 Screenshots
 
-_Coming soon..._
+![Screenshot]([https://user-images.githubusercontent.com/your-image-id.png](https://github.com/alihoushngi/Portfolio-v2/issues/1#issue-3069603679))
 
 ---
 
