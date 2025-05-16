@@ -46,7 +46,11 @@ Hi, I'm **Ali Hooshangi** – a passionate frontend developer with 6+ years of e
 
 ## 🌈 Screenshots
 
-![Screenshot]([https://user-images.githubusercontent.com/your-image-id.png](https://github.com/alihoushngi/Portfolio-v2/issues/1#issue-3069603679))
+<div align="center" style="display: flex; justify-content: space-between; align-items: center; gap: 5px;">
+  <img src="public/static/images/Screenshot%201404-02-26%20at%2021.28.40.png" width="32%" />
+  <img src="public/static/images/Screenshot%201404-02-26%20at%2021.28.46.png" width="32%" />
+  <img src="public/static/images/Screenshot%201404-02-26%20at%2021.28.51.png" width="32%" />
+</div>
 
 ---
 
